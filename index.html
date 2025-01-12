@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오</title>
+    <title>Game Developer Portfolio</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -11,79 +11,154 @@
             margin: 0;
             padding: 20px;
             background-color: #f5f5f5;
+            color: #333;
         }
         
         .container {
             max-width: 1000px;
             margin: 0 auto;
             background-color: white;
-            padding: 30px;
+            padding: 40px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .profile {
+        .intro {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
             margin-bottom: 30px;
         }
 
-        .skills {
-            margin-bottom: 30px;
-        }
-
-        .projects {
-            margin-bottom: 30px;
+        h1, h2, h3 {
+            color: #2c3e50;
         }
 
         .contact {
-            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .tech-stack {
+            color: #666;
+            font-style: italic;
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .skills-section {
+            margin: 30px 0;
+        }
+
+        .language-section {
+            margin: 30px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>개발자 포트폴리오</h1>
-            <p>웹 개발자의 포트폴리오입니다</p>
-        </header>
+        <div class="intro">
+            <p>Game Developer with 6 years of experience specializing in C++ frontend/backend development and Unreal Engine, focusing on game engine development, optimization, and debugging</p>
+        </div>
 
-        <section class="profile">
-            <h2>프로필</h2>
-            <p>안녕하세요! 열정적인 웹 개발자입니다.</p>
-        </section>
+        <div class="contact">
+            <h2>Contact Information</h2>
+            <p><a href="mailto:sprtms9062@gmail.com">📧 sprtms9062@gmail.com</a></p>
+            <p><a href="https://github.com/HaXX0rBunny">👾 github.com/HaXX0rBunny</a></p>
+            <p>Location: Busan, South Korea</p>
+        </div>
 
-        <section class="skills">
-            <h2>기술 스택</h2>
-            <ul>
-                <li>HTML5 / CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-            </ul>
-        </section>
+        <section>
+            <h2>Professional Experience</h2>
 
-        <section class="projects">
-            <h2>프로젝트</h2>
-            <div class="project">
-                <h3>프로젝트 1</h3>
-                <p>프로젝트 설명이 들어갑니다.</p>
+            <div class="experience-item">
+                <h3>Game Developer - Unreal - based Puzzle Game</h3>
+                <p class="tech-stack">Tech Stack: Unreal Engine 4, C++, Blueprint</p>
+                <p class="date">March 2022 - June 2022</p>
+                <ul>
+                    <li>Implemented QTE (Quick Time Event) system using C++ and Unreal Engine 4</li>
+                    <li>Developed outline rendering system for interactive objects</li>
+                    <li>Optimized game performance resulting in 30% improved stability</li>
+                    <li>Conducted performance profiling and memory leak debugging</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Game Developer - MegaRogue Project</h3>
+                <p class="tech-stack">Tech Stack: C, CProcessing Engine</p>
+                <p class="date">July 2024</p>
+                <ul>
+                    <li>Engineered real-time platform collision detection and physics system</li>
+                    <li>Developed character combat system including projectiles and effects</li>
+                    <li>Designed and implemented boss AI patterns</li>
+                    <li>Created level design tools reducing map creation time by 50%</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>UI/UX Developer - Huntress Game Jam Project</h3>
+                <p class="tech-stack">Tech Stack: C++, AlphaEngine, ImGui</p>
+                <p class="date">August 2024 - September 2024</p>
+                <ul>
+                    <li>Developed real-time player status HUD system</li>
+                    <li>Implemented shop system and inventory management</li>
+                    <li>Optimized UI response time by 40% through event handling improvements</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Engine Developer - BomberMan Project</h3>
+                <p class="tech-stack">Tech Stack: C++, OpenGL, ImGui</p>
+                <p class="date">September 2024</p>
+                <ul>
+                    <li>Designed and implemented component-based architecture</li>
+                    <li>Developed real-time debugging and profiling tools</li>
+                    <li>Integrated GLFW window system with OpenGL 4.6</li>
+                    <li>Implemented A* pathfinding algorithm for enemy AI</li>
+                    <li>Created JSON-based game data serialization system</li>
+                </ul>
             </div>
         </section>
 
-        <section class="contact">
-            <h2>연락처</h2>
-            <p>Email: your.email@example.com</p>
-            <p>GitHub: github.com/username</p>
-        </section>
+        <div class="skills-section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C++, C</li>
+                <li><strong>Game Engines:</strong> Unreal Engine 4, OpenGL</li>
+                <li><strong>Development Tools:</strong> ImGui, GLFW, JSON</li>
+                <li><strong>Areas of Expertise:</strong> Game Engine Development, UI/UX Development, Performance Optimization, Debugging</li>
+            </ul>
+        </div>
+
+        <div class="language-section">
+            <h2>Languages</h2>
+            <p>Korean 🇰🇷 (Native)</p>
+        </div>
+
+        <div class="education-section">
+            <h2>Education</h2>
+            <h3>Bachelor of Computer Science and Engineering</h3>
+            <p>Gyeongsang National University, Jinju City</p>
+            <p class="date">2016 - 2023</p>
+        </div>
     </div>
 </body>
 </html>

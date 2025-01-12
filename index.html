@@ -1,100 +1,14 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Developer Portfolio</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --accent-color: #3498db;
-            --bg-color: #f5f5f5;
-            --card-bg: #ffffff;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--primary-color);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* 헤더 스타일 */
-        .header {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: var(--card-bg);
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        /* 프로젝트 카드 스타일 */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 40px 0;
-        }
-
-        .project-card {
-            background: var(--card-bg);
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* 기술 스택 뱃지 */
-        .tech-badge {
-            display: inline-block;
-            padding: 5px 10px;
-            background: var(--accent-color);
-            color: white;
-            border-radius: 15px;
-            font-size: 0.8em;
-            margin: 5px;
-        }
-
-        /* 연락처 섹션 */
-        .contact {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .contact a {
-            color: var(--accent-color);
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        /* 반응형 디자인 */
-        @media (max-width: 768px) {
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container">
-        <!-- 헤더 섹션 -->
         <header class="header">
-            <!-- TODO: 프로필 이미지 추가 -->
-            <!-- <img src="profile.jpg" alt="Profile" class="profile-img"> -->
-            
             <h1>Game Developer</h1>
             <p>C++ frontend/backend development and Unreal Engine specialist</p>
             <p>6 years of experience in game engine development, optimization, and debugging</p>
@@ -105,80 +19,181 @@
             </div>
         </header>
 
-        <!-- 프로젝트 섹션 -->
         <section class="projects">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
-                <!-- Unreal Puzzle Game -->
                 <div class="project-card">
-                    <!-- TODO: 프로젝트 스크린샷 추가 -->
-                    <!-- <img src="puzzle-game.jpg" alt="Puzzle Game"> -->
-                    <h3>Unreal Puzzle Game</h3>
-                    <div class="tech-stack">
-                        <span class="tech-badge">Unreal Engine 4</span>
-                        <span class="tech-badge">C++</span>
-                        <span class="tech-badge">Blueprint</span>
+                    <div class="video-container">
+                        <iframe 
+                            title="Unreal Puzzle Game Demo"
+                            width="100%" 
+                            height="315"
+                            src="https://www.youtube.com/embed/qxAU1XQOO1o" 
+                            loading="lazy"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
-                    <p>QTE 시스템 구현 및 게임 최적화</p>
-                    <!-- TODO: 데모 링크 추가 -->
-                    <!-- <a href="#" class="demo-link">Live Demo</a> -->
+                    <h3>Unreal Puzzle Game</h3>
+ <div class="tech-stack">
+        <span class="tech-badge">Unreal Engine 4</span>
+        <span class="tech-badge">C++</span>
+        <span class="tech-badge">Blueprint</span>
+    </div>
+    <div class="technical-details">
+        <h4>Key Achievements & Implementation</h4>
+        <ul>
+            <li>Design and C++ implementation of QTE (Quick Time Event) system</li>
+            <li>Development of outline rendering system for interactive objects</li>
+            <li>Performance Optimization
+                <ul>
+                    <li>30% improvement in game stability</li>
+                    <li>Performance profiling and memory leak debugging</li>
+                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- MegaRogue Project -->
                 <div class="project-card">
-                    <!-- TODO: 프로젝트 스크린샷 추가 -->
+                    <div class="video-container">
+                        <iframe 
+                            title="MegaRogue Project Demo"
+                            width="100%" 
+                            height="315"
+                            src="https://www.youtube.com/embed/dd0ZqgdRN5Y" 
+                            loading="lazy"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                     <h3>MegaRogue Project</h3>
                     <div class="tech-stack">
                         <span class="tech-badge">C</span>
                         <span class="tech-badge">CProcessing</span>
                     </div>
-                    <p>실시간 물리 시스템 및 AI 패턴 구현</p>
+                    <div class="technical-details">
+                        <h4>Technical Implementation</h4>
+                    <ul>
+            <li>Implementation of real-time platform collision detection and physics system</li>
+            <li>Character Combat System
+                <ul>
+                    <li>Implementation of projectile and effect systems</li>
+                    <li>Design and implementation of boss AI patterns</li>
+                </ul>
+            </li>
+            <li>Level Design Tool Development
+                <ul>
+                    <li>Achieved 50% reduction in map creation time</li>
+                </ul>
+            </li>
+        </ul>
+                    </div>
+                    <a href="assets/downloads/MEGA_ROGUE_Setup.exe" class="download-btn">Download Demo (28MB)</a>
                 </div>
 
-                <!-- BomberMan Project -->
                 <div class="project-card">
-                    <!-- TODO: 프로젝트 스크린샷 추가 -->
-                    <h3>BomberMan Project</h3>
+                    <div class="video-container">
+                        <iframe 
+                            title="Huntress Game Jam Demo"
+                            width="100%" 
+                            height="315"
+                            src="https://www.youtube.com/embed/I_cFyhu3i0E" 
+                            loading="lazy"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3>Huntress Game Jam Project</h3>
                     <div class="tech-stack">
                         <span class="tech-badge">C++</span>
-                        <span class="tech-badge">OpenGL</span>
+                        <span class="tech-badge">AlphaEngine</span>
                         <span class="tech-badge">ImGui</span>
                     </div>
-                    <p>컴포넌트 기반 게임 엔진 개발</p>
+                    <div class="technical-details">
+                        <h4>Technical Implementation</h4>
+                        <ul>
+                            <li>Real-time player status HUD system</li>
+                            <li>Shop system implementation</li>
+                        </ul>
+                    </div>
+                    <a href="assets/downloads/Huntress_setup.exe" class="download-btn">Download Demo (32MB)</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>BomberMan Project</h3>
+                    <div class="tech-stack">
+                <span class="tech-badge">C++</span>
+        <span class="tech-badge">OpenGL 4.6</span>
+        <span class="tech-badge">ImGui</span>
+        <span class="tech-badge">GLFW</span>
+                    </div>
+                    <div class="technical-details">
+        <h4>Engine Development</h4>
+        <ul>
+            <li>Design and implementation of component-based architecture</li>
+            <li>Development of real-time debugging and profiling tools</li>
+            <li>Integration of GLFW window system with OpenGL 4.6</li>
+            <li>Gameplay Systems
+                <ul>
+                    <li>Implementation of enemy AI using A* pathfinding algorithm</li>
+                    <li>Bomb placement and chain explosion systems</li>
+                    <li>JSON-based game data serialization</li>
+                </ul>
+            </li>
+        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- 기술 스택 섹션 -->
-        <section class="skills">
-            <h2>Technical Skills</h2>
-            <div class="tech-stack">
-                <span class="tech-badge">C++</span>
-                <span class="tech-badge">C</span>
-                <span class="tech-badge">Unreal Engine 4</span>
-                <span class="tech-badge">OpenGL</span>
-                <span class="tech-badge">ImGui</span>
-                <span class="tech-badge">GLFW</span>
-            </div>
-        </section>
-
-        <!-- 교육 섹션 -->
-        <section class="education">
+<section class="skills">
+    <h2>Technical Skills</h2>
+    <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <div class="tech-stack">
+            <span class="tech-badge expert">C++ </span>
+            <span class="tech-badge advanced">C</span>
+        </div>
+    </div>
+    
+    <div class="skill-category">
+        <h3>Game Engines & Graphics</h3>
+        <div class="tech-stack">
+            <span class="tech-badge expert">Unreal Engine 4</span>
+            <span class="tech-badge advanced">OpenGL 4.6</span>
+        </div>
+    </div>
+    
+    <div class="skill-category">
+        <h3>Development Tools</h3>
+        <div class="tech-stack">
+            <span class="tech-badge">ImGui</span>
+            <span class="tech-badge">GLFW</span>
+            <span class="tech-badge">JSON</span>
+        </div>
+    </div>
+    
+    <div class="skill-category">
+        <h3>Expertise Areas</h3>
+        <div class="tech-stack">
+            <span class="tech-badge">Game Engine Development</span>
+            <span class="tech-badge">UI/UX Development</span>
+            <span class="tech-badge">Performance Optimization</span>
+            <span class="tech-badge">Debugging</span>
+        </div>
+    </div>
+</section>
+<section class="education">
             <h2>Education</h2>
             <div class="education-card">
                 <h3>Bachelor of Computer Science and Engineering</h3>
                 <p>Gyeongsang National University, 2016 - 2023</p>
             </div>
         </section>
-    </div>
-
-    <!-- TODO: 추가 필요 사항 -->
-    <!-- 1. 각 프로젝트별 스크린샷/데모 이미지 -->
-    <!-- 2. 프로젝트 상세 페이지 링크 -->
-    <!-- 3. GitHub 저장소 링크 -->
-    <!-- 4. 프로필 이미지 -->
-    <!-- 5. 다크모드/라이트모드 토글 -->
-    <!-- 6. 프로젝트 필터링 기능 -->
-    <!-- 7. 스크롤 애니메이션 -->
+    </div> <!-- container div 종료 -->
 </body>
 </html>

@@ -39,7 +39,7 @@ color: var(--primary-color);
 .main-content {
   flex: 1;
   margin-left: 15px; 
-  margin-right: 250px; 
+  margin-right: 300px; 
   display: flex;
   flex-direction: column;
 }

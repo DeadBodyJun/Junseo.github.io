@@ -41,6 +41,7 @@ color: var(--primary-color);
   margin-left: 0px; 
   margin-right: 250px; 
   display: flex;
+    width: 100%;
   flex-direction: column;
 }
 .video-container {
@@ -147,34 +148,79 @@ margin-top: 40px;
 }
 
 .contact a {
-color: var(--accent-color);
-text-decoration: none;
-margin: 0 10px;
+  color: var(--accent-color);
+  text-decoration: none;
+  margin: 0 10px;
+  display: block; /* 모바일에서 링크를 세로로 배치 */
+  margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding: 15px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* 태블릿에서는 2열로 */
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    padding: 10px;
   }
   
   .header {
     width: 100%;
     position: static;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    margin-right: 0;
   }
   
   .projects-grid {
-    grid-template-columns: 1fr; /* Single column on smaller screens */
+    grid-template-columns: 1fr; /* 모바일에서는 1열로 */
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .contact a {
+    display: inline-block;
+    margin-bottom: 5px;
   }
 }
 @media (max-width: 480px) {
-.header {
-padding: 30px 10px;
-}
-.tech-badge {
-margin: 3px;
-}
-.project-card {
-padding: 15px;
-}
+  .header {
+    padding: 20px 10px;
+  }
+  
+  .tech-badge {
+    margin: 2px;
+    padding: 4px 8px;
+    font-size: 0.75em;
+  }
+  
+  .project-card {
+    padding: 15px;
+  }
+  
+  .technical-details {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  h3 {
+    font-size: 1.1em;
+  }
 }

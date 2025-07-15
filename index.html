@@ -4,244 +4,263 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Developer Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-
-     <header class="header">
-            <h1>Game Developer</h1>
-            <p>C++ Client development and Unreal Engine specialist</p>
-            <p>game engine development, optimization, and debugging</p>
-            
-            <div class="contact">
-                <a href="mailto:sprtms9062@gmail.com">📧 sprtms9062@gmail.com</a>
-                <a href="https://github.com/HaXX0rBunny">👾 GitHub</a>
-                <a href="https://www.linkedin.com/in/haxxorbunny/">ℹ️ LinkedIn</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>Game Developer</h3>
             </div>
-        </header>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle btn btn--secondary btn--sm" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-<div class="main-content">
-        <section class="projects">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-   
-                <div class="project-card">
-                    <div class="video-container">
-                        <iframe 
-                            title="EdgeDriveDemo"
-                            width="100%" 
-                            height="315"
-                            src="https://www.youtube.com/embed/264Wfi25UOU" 
-                            loading="lazy"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home/Overview Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Game Developer</h1>
+                    <p class="hero-subtitle">C++ frontend/backend development and Unreal Engine specialist</p>
+                    <p class="hero-description">6 years of experience in game engine development, optimization, and debugging</p>
+                    
+                    <div class="hero-contact">
+                        <a href="mailto:sprtms9062@gmail.com" class="contact-link">
+                            <span class="contact-icon">📧</span>
+                            sprtms9062@gmail.com
+                        </a>
+                        <a href="https://github.com/HaXX0rBunny" target="_blank" class="contact-link">
+                            <span class="contact-icon">👾</span>
+                            GitHub
+                        </a>
                     </div>
-                    <h3>EdgeDrive Project</h3>
-                    <div class="tech-stack">
-                <span class="tech-badge">C++</span>
-        <span class="tech-badge">UnrealEngine 5</span>
-                    </div>
-                    <div class="technical-details">
-        <h4>Engine Development</h4>
-        <ul>
-            <li>Design game mechanics</li>
-            <li>Managament project schedule</li>
-            <li>Implemention Time Manipulation System</li>
-            <li>Implemented character mechanicys</li>
-            <li>Character Mechanics
-                <ul>
-                    <li>Fine-tuned movement parameters for optimal player control and feel</li>
-                    <li>Designed time-based counterattack mechanics that reward precise timing</li>
-                    <li>Built a modular damage system with locational damage multipliers </li>
-                    <li>Motionmatching animation state machine apply</li>
-                </ul>
-            </li>
-        </ul>
-                 
-	</div>
-        <a href="https://drive.google.com/file/d/1sqN5MWu41cPl4y9RzJuflM-jmdg0_4Er/view?usp=drive_link" class="download-btn">Download Demo</a>
-   </div>
-               
-
-                <div class="project-card">
-                    <div class="video-container">
-                        <iframe 
-                            title="MegaRogue Project Demo"
-                            width="100%" 
-                            height="315"
-                            src="https://www.youtube.com/embed/dd0ZqgdRN5Y" 
-                            loading="lazy"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <h3>MegaRogue Project</h3>
-                    <div class="tech-stack">
-                        <span class="tech-badge">C</span>
-                        <span class="tech-badge">CProcessing</span>
-                    </div>
-                    <div class="technical-details">
-                        <h4>Technical Implementation</h4>
-                    <ul>
-            <li>Implementation of real-time platform collision detection and physics system</li>
-            <li>Character Combat System
-                <ul>
-                    <li>Implementation of projectile and effect systems</li>
-                    <li>Design and implementation of boss AI patterns</li>
-                </ul>
-            </li>
-            <li>Level Design Tool Development
-                <ul>
-                    <li>Achieved 50% reduction in map creation time</li>
-                </ul>
-            </li>
-        </ul>
-                    </div>
-                    <a href="https://github.com/HaXX0rBunny/HaXX0rBunny.github.io/releases/download/v1.0.0/MEGA_ROGUE_Setup.exe" class="download-btn">Download Demo</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="video-container">
-                        <iframe 
-                            title="Huntress Game Jam Demo"
-                            width="100%" 
-                            height="315"
-                            src="https://www.youtube.com/embed/I_cFyhu3i0E" 
-                            loading="lazy"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <h3>Huntress Game Jam Project</h3>
-                    <div class="tech-stack">
-                        <span class="tech-badge">C++</span>
-                        <span class="tech-badge">AlphaEngine</span>
-                        <span class="tech-badge">ImGui</span>
-                    </div>
-                    <div class="technical-details">
-                        <h4>Technical Implementation</h4>
-                        <ul>
-                            <li>Real-time player status HUD system</li>
-                            <li>Implemented shop system and inventory management</li>
-                            <li>Created main menu and level interfaces</li>
-                            <li>Implemented UI, Button Tag System And Management System</li>
-                            <li>Optimized UI response time by 40% through event handling improvements</li>
-                            <li>Shop system implementation</li>
-                        </ul>
-                    </div>
-                    <a href="https://github.com/HaXX0rBunny/HaXX0rBunny.github.io/releases/download/Demo/Huntress_setup.exe" class="download-btn">Download Demo</a>
-                </div>
- <div class="project-card">
-                    <div class="video-container">
-                        <iframe 
-                            title="Unreal Puzzle Game Demo"
-                            width="100%" 
-                            height="315"
-                            src="https://www.youtube.com/embed/qxAU1XQOO1o" 
-                            loading="lazy"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <h3>Unreal Puzzle Game</h3>
- <div class="tech-stack">
-        <span class="tech-badge">Unreal Engine 4</span>
-        <span class="tech-badge">C++</span>
-        <span class="tech-badge">Blueprint</span>
-    </div>
-    <div class="technical-details">
-        <h4>Key Achievements & Implementation</h4>
-        <ul>
-            <li>Design and C++ implementation of QTE (Quick Time Event) system</li>
-            <li>Development of outline rendering system for interactive objects</li>
-            <li>Performance Optimization
-                <ul>
-                    <li>30% improvement in game stability</li>
-                    <li>Performance profiling and memory leak debugging</li>
-                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-             <div class="project-card">
-                    <h3>BomberMan Project</h3>
-                    <div class="tech-stack">
-                <span class="tech-badge">C++</span>
-        <span class="tech-badge">OpenGL 4.6</span>
-        <span class="tech-badge">ImGui</span>
-        <span class="tech-badge">GLFW</span>
-                    </div>
-                    <div class="technical-details">
-        <h4>Engine Development</h4>
-        <ul>
-            <li>Design and implementation of component-based architecture</li>
-            <li>Development of real-time debugging and profiling tools</li>
-            <li>Integration of GLFW window system with OpenGL 4.6</li>
-            <li>Gameplay Systems
-                <ul>
-                    <li>Implementation of enemy AI using A* pathfinding algorithm</li>
-                    <li>Bomb placement and chain explosion systems</li>
-                    <li>JSON-based game data serialization</li>
-                </ul>
-            </li>
-        </ul>
-                    </div>
- 
                 </div>
             </div>
         </section>
 
-<section class="skills">
-    <h2>Technical Skills</h2>
-    <div class="skill-category">
-        <h3>Programming Languages</h3>
-        <div class="tech-stack">
-            <span class="tech-badge expert">C++ </span>
-            <span class="tech-badge advanced">C</span>
-        </div>
-    </div>
-    
-    <div class="skill-category">
-        <h3>Game Engines & Graphics</h3>
-        <div class="tech-stack">
-            <span class="tech-badge expert">Unreal Engine 4</span>
-            <span class="tech-badge advanced">OpenGL 4.6</span>
-        </div>
-    </div>
-    
-    <div class="skill-category">
-        <h3>Development Tools</h3>
-        <div class="tech-stack">
-            <span class="tech-badge">ImGui</span>
-            <span class="tech-badge">GLFW</span>
-            <span class="tech-badge">JSON</span>
-        </div>
-    </div>
-    
-    <div class="skill-category">
-        <h3>Expertise Areas</h3>
-        <div class="tech-stack">
-            <span class="tech-badge">Game Engine Development</span>
-            <span class="tech-badge">UI/UX Development</span>
-            <span class="tech-badge">Performance Optimization</span>
-            <span class="tech-badge">Debugging</span>
-        </div>
-    </div>
-</section>
-<section class="education">
-            <h2>Education</h2>
-            <div class="education-card">
-                <h3>Bachelor of Computer Science and Engineering</h3>
-                <p>Gyeongsang National University, 2016 - 2023</p>
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-project="1">
+                        <div class="project-video">
+                            <iframe 
+                                title="Unreal Puzzle Game Demo"
+                                src="https://www.youtube.com/embed/qxAU1XQOO1o" 
+                                loading="lazy"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="project-info">
+                            <h3>Unreal Puzzle Game</h3>
+                            <p>C++ frontend/backend development and Unreal Engine specialist</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Unreal Engine 4</span>
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">Blueprint</span>
+                            </div>
+                            <button class="btn btn--primary project-detail-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="2">
+                        <div class="project-video">
+                            <iframe 
+                                title="MegaRogue Project Demo"
+                                src="https://www.youtube.com/embed/dd0ZqgdRN5Y" 
+                                loading="lazy"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="project-info">
+                            <h3>MegaRogue Project</h3>
+                            <p>Real-time platform collision detection and physics system</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">C</span>
+                                <span class="tech-badge">CProcessing</span>
+                            </div>
+                            <button class="btn btn--primary project-detail-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="3">
+                        <div class="project-video">
+                            <iframe 
+                                title="Huntress Game Jam Demo"
+                                src="https://www.youtube.com/embed/I_cFyhu3i0E" 
+                                loading="lazy"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="project-info">
+                            <h3>Huntress Game Jam Project</h3>
+                            <p>Real-time player status HUD system and shop implementation</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">AlphaEngine</span>
+                                <span class="tech-badge">ImGui</span>
+                            </div>
+                            <button class="btn btn--primary project-detail-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-project="4">
+                        <div class="project-info">
+                            <h3>BomberMan Project</h3>
+                            <p>Component-based architecture with OpenGL 4.6</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">OpenGL 4.6</span>
+                                <span class="tech-badge">ImGui</span>
+                                <span class="tech-badge">GLFW</span>
+                            </div>
+                            <button class="btn btn--primary project-detail-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-    </div> <!-- container div 종료 -->
-	  </div>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge expert">C++</span>
+                            <span class="tech-badge advanced">C</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Game Engines & Graphics</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge expert">Unreal Engine 4</span>
+                            <span class="tech-badge advanced">OpenGL 4.6</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Development Tools</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge">ImGui</span>
+                            <span class="tech-badge">GLFW</span>
+                            <span class="tech-badge">JSON</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Expertise Areas</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Game Engine Development</span>
+                            <span class="tech-badge">UI/UX Development</span>
+                            <span class="tech-badge">Performance Optimization</span>
+                            <span class="tech-badge">Debugging</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-section">
+                    <h3>Education</h3>
+                    <div class="education-card">
+                        <h4>Bachelor of Computer Science and Engineering</h4>
+                        <p>Gyeongsang National University, 2016 - 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always interested in discussing new opportunities and exciting projects.</p>
+                        <div class="contact-links">
+                            <a href="mailto:sprtms9062@gmail.com" class="contact-link">
+                                <span class="contact-icon">📧</span>
+                                sprtms9062@gmail.com
+                            </a>
+                            <a href="https://github.com/HaXX0rBunny" target="_blank" class="contact-link">
+                                <span class="contact-icon">👾</span>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Detail Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <nav class="breadcrumb">
+                    <a href="#" class="breadcrumb-link" id="backToProjects">← Back to Projects</a>
+                </nav>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body" id="projectDetailContent">
+                <!-- Project details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <span>↑</span>
+    </button>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

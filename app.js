@@ -1,14 +1,121 @@
 // Project data
 const projectsData = {
     1: {
-        title: "Unreal Puzzle Game",
+        title: "Edge Drive",
+        description: "A hybrid 3D action game inspired by Bayonetta, Dark Souls, and Paper Mario. As a DigiPen Busan Academy graduation project, this project enhanced my skills in implementing Unreal Engine 5's latest features and complex gameplay systems.",
+        videoUrl: "https://www.youtube.com/embed/264Wfi25UOU"
+        technologies: ["Unreal Engine 5.4", "C++", "Blueprint"],
+        achievements: [
+	"Modular Combat System: OOP-based architecture design improving weapon integration speed",
+            "Advanced State Machine: Motion matching-based responsive character control implementation",
+            "Dynamic Combo System: Developed scalable combo system adaptable to multiple weapons and attack patterns",
+            "Responsive Health System: Damage type-specific visual feedback implementation",
+            "Time Component System: Global/individual time scaling for cinematic effects"
+        ],
+        performance: [
+            "Stable 50~60FPS maintenance through event-driven architecture",
+            "28% reduction in computational load using Unreal Insights",
+            "Memory usage optimization through object pooling"
+        ],
+        problemSolving: [
+            "Problem: Frame drops during complex combat scenarios",
+            "Solution: Separated combat logic into event-driven system",
+            "Result: 30% reduction in CPU usage while maintaining visual quality"
+        ],
+        technicalDetails: [
+            "Modular combat system improving weapon integration speed",
+            "Motion matching-based advanced state machine",
+            "Scalable dynamic combo system",
+            "Time component system for cinematic effects"
+        ]
+    },
+    2: {
+        title: "MegaRogue Project",
+        description: "A roguelike game developed in C featuring advanced physics systems, AI patterns, and level design tools. The project showcases low-level programming skills and game architecture design.",
+        videoUrl: "https://www.youtube.com/embed/dd0ZqgdRN5Y",
+        technologies: ["C", "CProcessing"],
+        achievements: [
+            "AI System: State pattern-based enemy AI with dynamic boss patterns",
+            "Physics Engine: Real-time collision detection with 15% CPU usage optimization",
+            "Audio System: Multi-channel processing for real-time effects",
+            "Level Editor: In-game content creation tool"
+        ],
+        learning: [
+            "Mastered C-level memory management and optimization",
+            "Deep understanding of game engine fundamentals",
+            "Appreciated the convenience of high-level engines"
+        ],
+        challenges: [
+            "Implementing precise collision detection in C",
+            "Creating complex boss AI behavior patterns",
+        ],
+        downloadLink: "assets/downloads/MEGA_ROGUE_Setup.exe",
+        downloadSize: "28MB",
+       technicalDetails: [
+            "State pattern-based AI system",
+            "Real-time collision detection with 15% CPU optimization",
+        ]
+    },
+    3: {
+        title: "Huntress Game Jam Project",
+        description: "A game jam project developed under tight time constraints, showcasing rapid prototyping skills and efficient implementation of core game systems.",
+        videoUrl: "https://www.youtube.com/embed/I_cFyhu3i0E",
+        technologies: ["C++", "AlphaEngine", "ImGui"],
+        achievements: [
+            "Real-time HUD system with intuitive status tracking",
+            "Multi-resolution responsive inventory system",
+            "40% improvement in UI response time",
+            "Accessibility-focused dynamic layout system"
+        ]
+        challenges: [
+            "Implementing complex systems under time pressure",
+            "Creating intuitive UI/UX for game systems"
+        ],
+
+        downloadLink: "assets/downloads/Huntress_setup.exe",
+        downloadSize: "32MB",
+        technicalDetails: [
+            "Real-time HUD system with intuitive status tracking",
+            "Multi-resolution responsive inventory system",
+            "40% improvement in UI response time",
+            "Accessibility-focused dynamic layout system"
+        ]
+    },
+    4: {
+        title: "Redash",
+        description:  "Custom game engine development project. Focused on engine architecture design and implementation.",
+        videoUrl: null,
+        technologies: ["C++", "OpenGL 4.6", "ImGui", "GLFW"],
+        achievements: [
+            "Component-based Architecture: Design/implementation → Module replacement testing completed within 5 minutes",
+            "Custom Performance Profiler: Development → 35% frame drop elimination",
+            "ImGui Level Editor: Creation → Enhanced designer workflow efficiency"
+        ],
+        challenges: [
+            "Implementing efficient component system",
+            "Creating real-time debugging tools",
+            "Optimizing OpenGL rendering pipeline"
+        ],
+        solutions: [
+            "Developed custom ECS (Entity Component System)",
+            "Implemented ImGui-based debugging interface",
+            "Optimized draw calls and state management"
+        ],        
+        technicalDetails: [
+            "Component-based architecture design",
+            "Real-time performance profiling system",
+            "ImGui-based level editor",
+            "Module replacement testing completed within 5 minutes"
+        ]
+    },
+    5: {
+        title: "Rescue Simulator",
         description: "A comprehensive puzzle game developed in Unreal Engine 4 showcasing advanced C++ programming and Blueprint integration. The project demonstrates expertise in game engine development, optimization, and debugging.",
         videoUrl: "https://www.youtube.com/embed/qxAU1XQOO1o",
         technologies: ["Unreal Engine 4", "C++", "Blueprint"],
         achievements: [
             "Design and C++ implementation of QTE (Quick Time Event) system",
             "Development of outline rendering system for interactive objects",
-            "30% improvement in game stability",
             "Performance profiling and memory leak debugging"
         ],
         challenges: [
@@ -24,95 +131,7 @@ const projectsData = {
         technicalDetails: [
             "Custom QTE system with precise timing mechanisms",
             "Optimized outline rendering using custom shaders",
-            "Memory management system reducing leaks by 95%",
             "Blueprint-C++ integration for rapid prototyping"
-        ]
-    },
-    2: {
-        title: "MegaRogue Project",
-        description: "A roguelike game developed in C featuring advanced physics systems, AI patterns, and level design tools. The project showcases low-level programming skills and game architecture design.",
-        videoUrl: "https://www.youtube.com/embed/dd0ZqgdRN5Y",
-        technologies: ["C", "CProcessing"],
-        achievements: [
-            "Implementation of real-time platform collision detection and physics system",
-            "Implementation of projectile and effect systems",
-            "Design and implementation of boss AI patterns",
-            "Achieved 50% reduction in map creation time"
-        ],
-        challenges: [
-            "Implementing precise collision detection in C",
-            "Creating complex boss AI behavior patterns",
-            "Developing efficient level design tools"
-        ],
-        solutions: [
-            "Optimized collision detection using spatial partitioning",
-            "Implemented state machine for AI behaviors",
-            "Created visual level editor with drag-and-drop interface"
-        ],
-        downloadLink: "assets/downloads/MEGA_ROGUE_Setup.exe",
-        downloadSize: "28MB",
-        technicalDetails: [
-            "Real-time collision detection with spatial optimization",
-            "State machine-based AI system for complex behaviors",
-            "Custom level editor reducing creation time by 50%",
-            "Efficient memory management in pure C"
-        ]
-    },
-    3: {
-        title: "Huntress Game Jam Project",
-        description: "A game jam project developed under tight time constraints, showcasing rapid prototyping skills and efficient implementation of core game systems.",
-        videoUrl: "https://www.youtube.com/embed/I_cFyhu3i0E",
-        technologies: ["C++", "AlphaEngine", "ImGui"],
-        achievements: [
-            "Real-time player status HUD system",
-            "Shop system implementation"
-        ],
-        challenges: [
-            "Implementing complex systems under time pressure",
-            "Creating intuitive UI/UX for game systems"
-        ],
-        solutions: [
-            "Utilized efficient development patterns",
-            "Implemented modular system architecture"
-        ],
-        downloadLink: "assets/downloads/Huntress_setup.exe",
-        downloadSize: "32MB",
-        technicalDetails: [
-            "Real-time HUD system with dynamic updates",
-            "Modular shop system with extensible item types",
-            "Efficient UI rendering with ImGui integration",
-            "Rapid prototyping architecture for game jams"
-        ]
-    },
-    4: {
-        title: "BomberMan Project",
-        description: "A complete game engine development project featuring component-based architecture, advanced AI systems, and comprehensive debugging tools.",
-        videoUrl: null,
-        technologies: ["C++", "OpenGL 4.6", "ImGui", "GLFW"],
-        achievements: [
-            "Design and implementation of component-based architecture",
-            "Development of real-time debugging and profiling tools",
-            "Integration of GLFW window system with OpenGL 4.6",
-            "Implementation of enemy AI using A* pathfinding algorithm",
-            "Bomb placement and chain explosion systems",
-            "JSON-based game data serialization"
-        ],
-        challenges: [
-            "Implementing efficient component system",
-            "Creating real-time debugging tools",
-            "Optimizing OpenGL rendering pipeline"
-        ],
-        solutions: [
-            "Developed custom ECS (Entity Component System)",
-            "Implemented ImGui-based debugging interface",
-            "Optimized draw calls and state management"
-        ],
-        technicalDetails: [
-            "Custom Entity Component System architecture",
-            "A* pathfinding algorithm for intelligent AI",
-            "Real-time debugging with ImGui interface",
-            "OpenGL 4.6 rendering optimization",
-            "JSON serialization for game data management"
         ]
     }
 };

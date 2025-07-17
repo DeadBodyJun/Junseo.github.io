@@ -66,7 +66,7 @@ const projectsData = {
             "Multi-resolution responsive inventory system",
             "40% improvement in UI response time",
             "Accessibility-focused dynamic layout system"
-        ]
+        ],
         challenges: [
             "Implementing complex systems under time pressure",
             "Creating intuitive UI/UX for game systems"

@@ -3,7 +3,7 @@ const projectsData = {
     1: {
         title: "Edge Drive",
         description: "A hybrid 3D action game inspired by Bayonetta, Dark Souls, and Paper Mario. As a DigiPen Busan Academy graduation project, this project enhanced my skills in implementing Unreal Engine 5's latest features and complex gameplay systems.",
-        videoUrl: "https://www.youtube.com/embed/264Wfi25UOU"
+        videoUrl: "https://www.youtube.com/embed/264Wfi25UOU",
         technologies: ["Unreal Engine 5.4", "C++", "Blueprint"],
         achievements: [
 	"Modular Combat System: OOP-based architecture design improving weapon integration speed",

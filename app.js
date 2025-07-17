@@ -6,11 +6,21 @@ const projectsData = {
         videoUrl: "https://www.youtube.com/embed/264Wfi25UOU",
         technologies: ["Unreal Engine 5.4", "C++", "Blueprint"],
         achievements: [
-	"Modular Combat System: OOP-based architecture design improving weapon integration speed",
+            "Modular Combat System: OOP-based architecture design improving weapon integration speed",
             "Advanced State Machine: Motion matching-based responsive character control implementation",
             "Dynamic Combo System: Developed scalable combo system adaptable to multiple weapons and attack patterns",
             "Responsive Health System: Damage type-specific visual feedback implementation",
             "Time Component System: Global/individual time scaling for cinematic effects"
+        ],
+        challenges: [
+            "Implementing complex combat mechanics with multiple weapon types",
+            "Optimizing performance while maintaining visual quality",
+            "Creating scalable system architecture for easy expansion"
+        ],
+        solutions: [
+            "Developed modular OOP-based combat system",
+            "Implemented event-driven architecture for performance",
+            "Created reusable component systems"
         ],
         performance: [
             "Stable 50~60FPS maintenance through event-driven architecture",
@@ -48,10 +58,16 @@ const projectsData = {
         challenges: [
             "Implementing precise collision detection in C",
             "Creating complex boss AI behavior patterns",
+            "Managing memory manually without garbage collection"
+        ],
+        solutions: [
+            "Developed optimized collision detection algorithms",
+            "Implemented state pattern for AI behavior management",
+            "Created custom memory management system"
         ],
         downloadLink: "assets/downloads/MEGA_ROGUE_Setup.exe",
         downloadSize: "28MB",
-       technicalDetails: [
+        technicalDetails: [
             "State pattern-based AI system",
             "Real-time collision detection with 15% CPU optimization",
         ]
@@ -69,9 +85,14 @@ const projectsData = {
         ],
         challenges: [
             "Implementing complex systems under time pressure",
-            "Creating intuitive UI/UX for game systems"
+            "Creating intuitive UI/UX for game systems",
+            "Optimizing performance on limited development time"
         ],
-
+        solutions: [
+            "Focused on core mechanics first, then polish",
+            "Used rapid prototyping techniques",
+            "Implemented efficient UI rendering system"
+        ],
         downloadLink: "assets/downloads/Huntress_setup.exe",
         downloadSize: "32MB",
         technicalDetails: [
@@ -83,7 +104,7 @@ const projectsData = {
     },
     4: {
         title: "Redash",
-        description:  "Custom game engine development project. Focused on engine architecture design and implementation.",
+        description: "Custom game engine development project. Focused on engine architecture design and implementation.",
         videoUrl: null,
         technologies: ["C++", "OpenGL 4.6", "ImGui", "GLFW"],
         achievements: [
@@ -100,7 +121,7 @@ const projectsData = {
             "Developed custom ECS (Entity Component System)",
             "Implemented ImGui-based debugging interface",
             "Optimized draw calls and state management"
-        ],        
+        ],
         technicalDetails: [
             "Component-based architecture design",
             "Real-time performance profiling system",
@@ -140,7 +161,7 @@ const projectsData = {
 let currentTheme = 'light';
 
 // Initialize on DOM load
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     initializeApp();
 });
 
@@ -160,29 +181,29 @@ function initializeApp() {
 
     // Initialize theme
     initTheme();
-    
+
     // Initialize animations
     initAnimations();
-    
+
     // Event listeners
     if (themeToggle) {
         themeToggle.addEventListener('click', toggleTheme);
     }
-    
+
     if (navToggle) {
-        navToggle.addEventListener('click', function() {
+        navToggle.addEventListener('click', function () {
             navMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
         });
     }
-    
+
     // Navigation links with smooth scrolling
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
-            
+
             if (targetElement) {
                 const offsetTop = targetElement.offsetTop - 60;
                 window.scrollTo({
@@ -190,67 +211,67 @@ function initializeApp() {
                     behavior: 'smooth'
                 });
             }
-            
+
             // Close mobile nav
             navMenu.classList.remove('active');
             navToggle.classList.remove('active');
         });
     });
-    
+
     // Project cards
     projectCards.forEach(card => {
-        card.addEventListener('click', function() {
+        card.addEventListener('click', function () {
             const projectId = this.getAttribute('data-project');
             openProjectModal(projectId);
         });
     });
-    
+
     // Modal controls
     if (modalClose) {
         modalClose.addEventListener('click', closeProjectModal);
     }
-    
+
     if (backToProjects) {
-        backToProjects.addEventListener('click', function(e) {
+        backToProjects.addEventListener('click', function (e) {
             e.preventDefault();
             closeProjectModal();
         });
     }
-    
+
     // Close modal on backdrop click
     if (projectModal) {
-        projectModal.addEventListener('click', function(e) {
+        projectModal.addEventListener('click', function (e) {
             if (e.target === projectModal) {
                 closeProjectModal();
             }
         });
     }
-    
+
     // Back to top button
     if (backToTop) {
-        backToTop.addEventListener('click', function() {
+        backToTop.addEventListener('click', function () {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
         });
     }
-    
+
     // Contact form
     if (contactForm) {
         contactForm.addEventListener('submit', handleContactForm);
     }
-    
+
     // Scroll events
     window.addEventListener('scroll', throttle(handleScroll, 16));
-    
+
     // Keyboard navigation
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && projectModal && projectModal.classList.contains('active')) {
             closeProjectModal();
         }
     });
-    
+
     // Initial scroll check
     handleScroll();
 }
@@ -267,7 +288,7 @@ function initTheme() {
             currentTheme = 'dark';
         }
     }
-    
+
     setTheme(currentTheme);
 }
 
@@ -304,12 +325,12 @@ function handleScroll() {
 function updateActiveNavLink() {
     const scrollPosition = window.scrollY + 100;
     const sections = document.querySelectorAll('section[id]');
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
         const sectionId = section.getAttribute('id');
-        
+
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
             const navLinks = document.querySelectorAll('.nav-link');
             navLinks.forEach(link => {
@@ -335,11 +356,11 @@ function toggleBackToTop() {
 
 function animateOnScroll() {
     const elements = document.querySelectorAll('.project-card, .skill-category, .education-card');
-    
+
     elements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
         const elementVisible = 150;
-        
+
         if (elementTop < window.innerHeight - elementVisible) {
             element.style.opacity = '1';
             element.style.transform = 'translateY(0)';
@@ -351,13 +372,13 @@ function handleNavbarScroll() {
     const navbar = document.querySelector('.navbar');
     if (navbar) {
         if (window.scrollY > 50) {
-            navbar.style.background = currentTheme === 'light' 
-                ? 'rgba(255, 255, 253, 0.98)' 
+            navbar.style.background = currentTheme === 'light'
+                ? 'rgba(255, 255, 253, 0.98)'
                 : 'rgba(38, 40, 40, 0.98)';
             navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
         } else {
-            navbar.style.background = currentTheme === 'light' 
-                ? 'rgba(255, 255, 253, 0.95)' 
+            navbar.style.background = currentTheme === 'light'
+                ? 'rgba(255, 255, 253, 0.95)'
                 : 'rgba(38, 40, 40, 0.95)';
             navbar.style.boxShadow = 'none';
         }
@@ -370,7 +391,7 @@ function openProjectModal(projectId) {
     if (!project) return;
 
     showLoading();
-    
+
     setTimeout(() => {
         renderProjectDetail(project);
         const projectModal = document.getElementById('projectModal');
@@ -452,14 +473,14 @@ function renderProjectDetail(project) {
         <div class="project-detail-section">
             <h3>Challenges</h3>
             <ul>
-                ${project.challenges.map(challenge => `<li>${challenge}</li>`).join('')}
+                ${(project.challenges || []).map(challenge => `<li>${challenge}</li>`).join('')}
             </ul>
         </div>
 
         <div class="project-detail-section">
             <h3>Solutions</h3>
             <ul>
-                ${project.solutions.map(solution => `<li>${solution}</li>`).join('')}
+                ${(project.solutions || []).map(solution => `<li>${solution}</li>`).join('')}
             </ul>
         </div>
 
@@ -485,32 +506,32 @@ function hideLoading() {
 // Contact form functionality
 function handleContactForm(e) {
     e.preventDefault();
-    
+
     const formData = new FormData(e.target);
     const name = formData.get('name');
     const email = formData.get('email');
     const message = formData.get('message');
-    
+
     if (!name || !email || !message) {
         alert('Please fill in all fields.');
         return;
     }
-    
+
     showLoading();
-    
+
     setTimeout(() => {
         hideLoading();
-        
+
         // Create mailto link
         const subject = `Portfolio Contact from ${name}`;
         const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
         const mailtoLink = `mailto:sprtms9062@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        
+
         window.open(mailtoLink, '_blank');
-        
+
         // Reset form
         e.target.reset();
-        
+
         // Show success message
         alert('Thank you for your message! Your email client should open now.');
     }, 1000);
@@ -519,7 +540,7 @@ function handleContactForm(e) {
 // Initialize animations
 function initAnimations() {
     const elements = document.querySelectorAll('.project-card, .skill-category, .education-card');
-    
+
     elements.forEach(element => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(30px)';
@@ -528,11 +549,11 @@ function initAnimations() {
 
     // Hero section animations
     const heroElements = document.querySelectorAll('.hero-content > *');
-    
+
     heroElements.forEach((element, index) => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(30px)';
-        
+
         setTimeout(() => {
             element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
             element.style.opacity = '1';
@@ -555,29 +576,29 @@ function throttle(func, wait) {
 }
 
 // Enhanced interactions
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Tech badge hover effects
     const techBadges = document.querySelectorAll('.tech-badge');
-    
+
     techBadges.forEach(badge => {
-        badge.addEventListener('mouseenter', function() {
+        badge.addEventListener('mouseenter', function () {
             this.style.transform = 'scale(1.05)';
         });
-        
-        badge.addEventListener('mouseleave', function() {
+
+        badge.addEventListener('mouseleave', function () {
             this.style.transform = 'scale(1)';
         });
     });
 
     // Enhanced project card interactions
     const projectCards = document.querySelectorAll('.project-card');
-    
+
     projectCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
+        card.addEventListener('mouseenter', function () {
             this.style.transform = 'translateY(-8px) scale(1.02)';
         });
-        
-        card.addEventListener('mouseleave', function() {
+
+        card.addEventListener('mouseleave', function () {
             this.style.transform = 'translateY(0) scale(1)';
         });
     });

@@ -1,37 +1,29 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>게임 개발자 포트폴리오</title>
-    <link rel="stylesheet" href="enhanced-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Game Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Loading Spinner -->
-    <div id="loadingSpinner" class="loading-spinner">
-        <div class="spinner"></div>
-    </div>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h3>Portfolio</h3>
+                <h3>Game Developer</h3>
             </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-controls">
-                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                <button class="theme-toggle btn btn--secondary btn--sm" id="themeToggle">
                     <span class="theme-icon">🌙</span>
                 </button>
-                <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+                <button class="nav-toggle" id="navToggle">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -42,110 +34,27 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Enhanced Hero Section -->
+        <!-- Home/Overview Section -->
         <section id="home" class="hero-section">
-            <div class="hero-video-container">
-                <video id="heroVideo" autoplay muted loop playsinline class="hero-video">
-                    <source src="https://www.youtube.com/embed/264Wfi25UOU" type="video/mp4">
-                    <!-- Fallback for browsers that don't support video -->
-                </video>
-                <div class="hero-video-overlay"></div>
-                <div class="hero-background-pattern"></div>
-            </div>
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="hero-name">
-                        <span class="name-line typing-animation" data-text="게임 개발자">게임 개발자</span>
-                        <span class="name-line typing-animation" data-text="포트폴리오" data-delay="1000">포트폴리오</span>
-                    </h1>
-                    <h2 class="hero-title">
-                        <span class="title-highlight shimmer-effect">Game Director</span>
-                        <span class="title-separator">&</span>
-                        <span class="title-highlight shimmer-effect">Gameplay Programmer</span>
-                    </h2>
-                    <p class="hero-description">
-                        Unreal Engine 전문가로서 혁신적인 게임 경험을 창조합니다.<br>
-                        <strong>Edge Drive</strong> 프로젝트를 통해 입증된 실력을 확인해보세요.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="#projects" class="btn btn--primary btn--lg">
-                            <span class="btn-text">프로젝트 보기</span>
-                            <span class="btn-icon">→</span>
+                    <h1>Game Developer</h1>
+                    <p class="hero-subtitle">C++ frontend/backend development and Unreal Engine specialist</p>
+                    <p class="hero-description">6 years of experience in game engine development, optimization, and debugging</p>
+                    
+                    <div class="hero-contact">
+		<a href="https://www.linkedin.com/in/haxxorbunny/" class="contact-link" target="_blank">
+                            <span class="contact-icon">💼</span>
+                            LinkedIn
                         </a>
-                        <a href="#contact" class="btn btn--outline btn--lg">
-                            <span class="btn-text">연락하기</span>
-                            <span class="btn-icon">✉</span>
+                        <a href="mailto:sprtms9062@gmail.com" class="contact-link">
+                            <span class="contact-icon">📧</span>
+                            sprtms9062@gmail.com
                         </a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">프로젝트</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">2+</span>
-                            <span class="stat-label">년 경험</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">UE5</span>
-                            <span class="stat-label">전문가</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-scroll-indicator">
-                <div class="scroll-mouse">
-                    <div class="scroll-wheel"></div>
-                </div>
-                <p>아래로 스크롤</p>
-            </div>
-        </section>
-
-        <!-- Featured Project Section -->
-        <section id="featured" class="featured-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Featured Project</h2>
-                    <p class="section-subtitle">대표작: Edge Drive</p>
-                </div>
-                <div class="featured-project">
-                    <div class="featured-video">
-                        <iframe 
-                            src="https://www.youtube.com/embed/264Wfi25UOU" 
-                            title="Edge Drive Gameplay" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="featured-content">
-                        <h3>Edge Drive</h3>
-                        <p class="featured-description">
-                            Unreal Engine 5.4 기반 3D 액션 게임으로, Bayonetta, Dark Souls, Paper Mario에서 영감을 받은 
-                            하이브리드 장르 게임입니다. 혁신적인 컴뱃 시스템과 시네마틱 연출이 특징입니다.
-                        </p>
-                        <div class="featured-tech">
-                            <span class="tech-badge expert">Unreal Engine 5.4</span>
-                            <span class="tech-badge expert">C++</span>
-                            <span class="tech-badge advanced">Blueprint</span>
-                        </div>
-                        <div class="featured-achievements">
-                            <div class="achievement-item">
-                                <span class="achievement-icon">⚡</span>
-                                <span>모듈러 컴뱃 시스템</span>
-                            </div>
-                            <div class="achievement-item">
-                                <span class="achievement-icon">🎯</span>
-                                <span>고급 상태 머신</span>
-                            </div>
-                            <div class="achievement-item">
-                                <span class="achievement-icon">🚀</span>
-                                <span>50-60 FPS 안정적 유지</span>
-                            </div>
-                        </div>
-                        <button class="btn btn--primary" onclick="openProjectModal('1')">
-                            자세히 보기
-                        </button>
+                        <a href="https://github.com/HaXX0rBunny" target="_blank" class="contact-link">
+                            <span class="contact-icon">👾</span>
+                            GitHub
+                        </a>
                     </div>
                 </div>
             </div>
@@ -154,87 +63,111 @@
         <!-- Projects Section -->
         <section id="projects" class="projects-section">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle">게임 개발 전문성을 보여주는 대표 프로젝트들</p>
-                </div>
+                <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card" data-project="1">
                         <div class="project-video">
-                            <iframe src="https://www.youtube.com/embed/264Wfi25UOU" frameborder="0" allowfullscreen></iframe>
+                            <iframe 
+                                title="EdgeDrive"
+                                src="https://www.youtube.com/embed/264Wfi25UOU"
+                                loading="lazy"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="project-info">
                             <h3>Edge Drive</h3>
                             <p>Action Game · Team of 4 · Game Director & Gameplay Programmer</p>
                             <div class="tech-stack">
-                                <span class="tech-badge expert">Unreal Engine 5.4</span>
-                                <span class="tech-badge expert">C++</span>
-                                <span class="tech-badge advanced">Blueprint</span>
+                                <span class="tech-badge">Unreal Engine 5.4</span>
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">Blueprint</span>
                             </div>
-                            <button class="btn btn--outline project-detail-btn">자세히 보기</button>
+              
                         </div>
                     </div>
 
                     <div class="project-card" data-project="2">
                         <div class="project-video">
-                            <iframe src="https://www.youtube.com/embed/dd0ZqgdRN5Y" frameborder="0" allowfullscreen></iframe>
+                            <iframe 
+                                title="MegaRogue Project Demo"
+                                src="https://www.youtube.com/embed/dd0ZqgdRN5Y" 
+                                loading="lazy"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="project-info">
                             <h3>MegaRogue Project</h3>
                             <p>Real-time platform collision detection and physics system</p>
                             <div class="tech-stack">
-                                <span class="tech-badge expert">C</span>
-                                <span class="tech-badge advanced">CProcessing</span>
+                                <span class="tech-badge">C</span>
+                                <span class="tech-badge">CProcessing</span>
                             </div>
-                            <button class="btn btn--outline project-detail-btn">자세히 보기</button>
+    
                         </div>
                     </div>
 
                     <div class="project-card" data-project="3">
                         <div class="project-video">
-                            <iframe src="https://www.youtube.com/embed/I_cFyhu3i0E" frameborder="0" allowfullscreen></iframe>
+                            <iframe 
+                                title="Huntress Game Jam Demo"
+                                src="https://www.youtube.com/embed/I_cFyhu3i0E" 
+                                loading="lazy"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="project-info">
                             <h3>Huntress Game Jam Project</h3>
                             <p>Real-time player status HUD system and shop implementation</p>
                             <div class="tech-stack">
-                                <span class="tech-badge expert">C++</span>
-                                <span class="tech-badge advanced">AlphaEngine</span>
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">AlphaEngine</span>
                                 <span class="tech-badge">ImGui</span>
                             </div>
-                            <button class="btn btn--outline project-detail-btn">자세히 보기</button>
+
                         </div>
                     </div>
-
-                    <div class="project-card" data-project="4">
-                        <div class="project-info">
-                            <h3>Redash Project</h3>
-                            <p>Custom Engine · Solo Project · Engine Developer</p>
-                            <div class="tech-stack">
-                                <span class="tech-badge expert">C++</span>
-                                <span class="tech-badge advanced">OpenGL 4.6</span>
-                                <span class="tech-badge">ImGui</span>
-                                <span class="tech-badge">GLFW</span>
-                            </div>
-                            <button class="btn btn--outline project-detail-btn">자세히 보기</button>
-                        </div>
-                    </div>
-
-                    <div class="project-card" data-project="5">
+		<div class="project-card" data-project="5">
                         <div class="project-video">
-                            <iframe src="https://www.youtube.com/embed/qxAU1XQOO1o" frameborder="0" allowfullscreen></iframe>
+                            <iframe 
+                                title="Unreal Puzzle Game Demo"
+                                src="https://www.youtube.com/embed/qxAU1XQOO1o" 
+                                loading="lazy"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="project-info">
                             <h3>Unreal Puzzle Game</h3>
                             <p>C++ frontend/backend development and Unreal Engine specialist</p>
                             <div class="tech-stack">
-                                <span class="tech-badge expert">Unreal Engine 4</span>
-                                <span class="tech-badge expert">C++</span>
-                                <span class="tech-badge advanced">Blueprint</span>
+                                <span class="tech-badge">Unreal Engine 4</span>
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">Blueprint</span>
                             </div>
-                            <button class="btn btn--outline project-detail-btn">자세히 보기</button>
+
                         </div>
                     </div>
+                    <div class="project-card" data-project="4">
+                        <div class="project-info">
+                            <h3>Redash Project</h3>
+                            <p>Custom Engine · Solo Project · Engine Developer</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">C++</span>
+                                <span class="tech-badge">OpenGL 4.6</span>
+                                <span class="tech-badge">ImGui</span>
+                                <span class="tech-badge">GLFW</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -242,80 +175,44 @@
         <!-- Skills Section -->
         <section id="skills" class="skills-section">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Technical Skills</h2>
-                    <p class="section-subtitle">게임 개발에 필요한 전문 기술들</p>
-                </div>
+                <h2 class="section-title">Technical Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
                         <h3>Programming Languages</h3>
-                        <div class="skill-items">
-                            <div class="skill-item expert">
-                                <span class="skill-name">C++</span>
-                                <span class="skill-level">Expert</span>
-                            </div>
-                            <div class="skill-item expert">
-                                <span class="skill-name">C</span>
-                                <span class="skill-level">Expert</span>
-                            </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge expert">C++</span>
+                            <span class="tech-badge advanced">C</span>
                         </div>
                     </div>
+                    
                     <div class="skill-category">
                         <h3>Game Engines & Graphics</h3>
-                        <div class="skill-items">
-                            <div class="skill-item expert">
-                                <span class="skill-name">Unreal Engine 5</span>
-                                <span class="skill-level">Expert</span>
-                            </div>
-                            <div class="skill-item advanced">
-                                <span class="skill-name">Unreal Engine 4</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <div class="skill-item advanced">
-                                <span class="skill-name">OpenGL 4.6</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge expert">Unreal Engine 4</span>
+                            <span class="tech-badge advanced">OpenGL 4.6</span>
                         </div>
                     </div>
+                    
                     <div class="skill-category">
                         <h3>Development Tools</h3>
-                        <div class="skill-items">
-                            <div class="skill-item advanced">
-                                <span class="skill-name">ImGui</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <div class="skill-item advanced">
-                                <span class="skill-name">GLFW</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name">JSON</span>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">ImGui</span>
+                            <span class="tech-badge">GLFW</span>
+                            <span class="tech-badge">JSON</span>
                         </div>
                     </div>
+                    
                     <div class="skill-category">
                         <h3>Expertise Areas</h3>
-                        <div class="skill-items">
-                            <div class="skill-item expert">
-                                <span class="skill-name">Game Engine Development</span>
-                                <span class="skill-level">Expert</span>
-                            </div>
-                            <div class="skill-item expert">
-                                <span class="skill-name">UI/UX Development</span>
-                                <span class="skill-level">Expert</span>
-                            </div>
-                            <div class="skill-item advanced">
-                                <span class="skill-name">Performance Optimization</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <div class="skill-item advanced">
-                                <span class="skill-name">Debugging</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Game Engine Development</span>
+                            <span class="tech-badge">UI/UX Development</span>
+                            <span class="tech-badge">Performance Optimization</span>
+                            <span class="tech-badge">Debugging</span>
                         </div>
                     </div>
                 </div>
+                
                 <div class="education-section">
                     <h3>Education</h3>
                     <div class="education-card">
@@ -329,72 +226,67 @@
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Contact</h2>
-                    <p class="section-subtitle">게임 개발 프로젝트 문의 환영합니다</p>
-                </div>
+                <h2 class="section-title">Get In Touch</h2>
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h3>함께 작업하고 싶으시다면</h3>
-                        <p>게임 개발 프로젝트, 기술 상담, 또는 협업 기회에 대해 언제든지 연락주세요.</p>
+                        <h3>Let's Connect</h3>
+                        <p>I'm always interested in discussing new opportunities and exciting projects.</p>
                         <div class="contact-links">
-                            <a href="mailto:your.email@example.com" class="contact-link">
-                                <span class="contact-icon">✉️</span>
-                                <span>your.email@example.com</span>
+                            <a href="mailto:sprtms9062@gmail.com" class="contact-link">
+                                <span class="contact-icon">📧</span>
+                                sprtms9062@gmail.com
                             </a>
-                            <a href="https://github.com/yourusername" class="contact-link" target="_blank">
-                                <span class="contact-icon">🐙</span>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">
-                                <span class="contact-icon">💼</span>
-                                <span>LinkedIn</span>
+                            <a href="https://github.com/HaXX0rBunny" target="_blank" class="contact-link">
+                                <span class="contact-icon">👾</span>
+                                GitHub
                             </a>
                         </div>
                     </div>
-                    <form id="contactForm" class="contact-form">
+                    <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <label for="name" class="form-label">이름</label>
+                            <label for="name" class="form-label">Name</label>
                             <input type="text" id="name" name="name" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="email" class="form-label">이메일</label>
+                            <label for="email" class="form-label">Email</label>
                             <input type="email" id="email" name="email" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="message" class="form-label">메시지</label>
+                            <label for="message" class="form-label">Message</label>
                             <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn--primary btn--full-width">
-                            <span class="btn-text">메시지 보내기</span>
-                            <span class="btn-icon">→</span>
-                        </button>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Project Modal -->
-    <div id="projectModal" class="modal">
+    <!-- Project Detail Modal -->
+    <div class="modal" id="projectModal">
         <div class="modal-content">
             <div class="modal-header">
-                <div class="breadcrumb">
-                    <a href="#" id="backToProjects" class="breadcrumb-link">← 프로젝트로 돌아가기</a>
-                </div>
-                <button id="modalClose" class="modal-close">&times;</button>
+                <nav class="breadcrumb">
+                    <a href="#" class="breadcrumb-link" id="backToProjects">← Back to Projects</a>
+                </nav>
+                <button class="modal-close" id="modalClose">&times;</button>
             </div>
-            <div class="modal-body">
-                <div id="projectDetailContent">
-                    <!-- Project details will be loaded here -->
-                </div>
+            <div class="modal-body" id="projectDetailContent">
+                <!-- Project details will be populated here -->
             </div>
         </div>
     </div>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">↑</button>
+    <button class="back-to-top" id="backToTop">
+        <span>↑</span>
+    </button>
 
-    <script src="enhanced-app.js"></script>
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

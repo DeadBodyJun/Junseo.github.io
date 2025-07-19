@@ -315,6 +315,81 @@ function toggleTheme() {
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
 }
+// Enhanced JavaScript for Hero Section
+function initializeHeroSection() {
+    const heroVideo = document.querySelector('.hero-video');
+    const heroName = document.querySelector('.hero-name');
+    const heroSection = document.querySelector('.hero-section');
+
+    // Video load handling
+    if (heroVideo) {
+        heroVideo.addEventListener('load', function() {
+            console.log('Hero video loaded successfully');
+        });
+
+        // Fallback for video loading issues
+        heroVideo.addEventListener('error', function() {
+            console.log('Video failed to load, using fallback background');
+            heroSection.style.background = 'linear-gradient(135deg, var(--color-surface) 0%, var(--color-background) 100%)';
+        });
+    }
+
+    // Typing effect enhancement
+    if (heroName && heroName.classList.contains('typing-effect')) {
+        const text = heroName.textContent;
+        heroName.textContent = '';
+
+        setTimeout(() => {
+            let i = 0;
+            const typeWriter = () => {
+                if (i < text.length) {
+                    heroName.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                } else {
+                    // Remove typing cursor after completion
+                    setTimeout(() => {
+                        heroName.style.borderRight = 'none';
+                    }, 2000);
+                }
+            };
+            typeWriter();
+        }, 500);
+    }
+
+    // Parallax effect on scroll
+    window.addEventListener('scroll', throttle(() => {
+        const scrolled = window.pageYOffset;
+        const heroVideoContainer = document.querySelector('.hero-video-container');
+
+        if (heroVideoContainer && scrolled < window.innerHeight) {
+            const speed = scrolled * 0.5;
+            heroVideoContainer.style.transform = `translateY(${speed}px)`;
+        }
+    }, 16));
+
+    // Interactive hover effects
+    const contactLinks = document.querySelectorAll('.contact-link');
+    contactLinks.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-6px) scale(1.05) rotate(2deg)';
+        });
+
+        link.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1) rotate(0deg)';
+        });
+    });
+}
+
+// initializeApp() 함수 내에 추가
+function initializeApp() {
+    // 기존 코드...
+    
+    // Initialize hero section enhancements
+    initializeHeroSection();
+    
+    // 기존 코드...
+}
 
 // Scroll handling
 function handleScroll() {

@@ -35,12 +35,16 @@
     <!-- Main Content -->
     <main class="main-content">
         <!-- Home/Overview Section -->
-        <section id="home" class="hero-section">
-    	<!-- Video Background -->
-    	     <div class="hero-video-container">
-		<source src="./assets/videos/IDC trailer.mp4" type="video/mp4">
-            <!-- Alternative Image -->
-            <img src="./assets/images/EdgeDrive.png" alt="Edge Drive Background">
+        <div class="hero-video-container">
+        <video class="hero-video" 
+       autoplay 
+       muted 
+       loop 
+       playsinline
+       webkit-playsinline>
+            <source src="./Assets/videos/edge-drive-background.mp4" type="video/mp4">
+            <!-- Alternative Image for fallback -->
+            <img src="./Assets/images/EdgeDrive.png" alt="Edge Drive Background">
         </video>
         <div class="hero-video-overlay"></div>
     </div>

@@ -57,16 +57,22 @@ const projectsData = {
     "2": {
         "title": "MegaRogue Project",
         "subtitle": "Advanced Roguelike Game",
-        "project_type": "solo",
-        "is_team_project": false,
-        "my_role": "Solo Developer",
+        "project_type": "team",
+        "is_team_project": true,
+        "team_size": 2,
+        "my_role": "Gameplay Engineer",
         "technologies": ["C", "CProcessing"],
         "description": "A roguelike game developed in C featuring advanced physics systems, AI patterns, and level design tools. The project showcases low-level programming skills and game architecture design.",
         "videoUrl": "https://www.youtube.com/embed/dd0ZqgdRN5Y",
         "collaboration_details": {
-            "project_type": "Solo Development",
-            "scope": "Full-stack development including design, programming, and testing",
-            "self_managed_aspects": ["Project planning", "Technical implementation", "Quality assurance", "Documentation"]
+            "team_size": 2,
+            "my_role": "System Engineer",
+            "team_roles": [
+                "Gameplay Engineer (Me)",
+                "System Engineer",
+            ],
+            "collaboration_tools": ["Git", "Discord"],
+            "team_dynamics": "Client development including design, programming, and testing"
         },
         "technical_challenges": [
             "Real-time collision detection optimization",
@@ -101,17 +107,23 @@ const projectsData = {
     "3": {
         "title": "Huntress Game Jam",
         "subtitle": "Rapid Prototyping Challenge",
-        "project_type": "solo",
-        "is_team_project": false,
-        "my_role": "Solo Developer",
+        "project_type": "team",
+        "is_team_project": true,
+        "team_size": 3,
+        "my_role": "UI/UX Developer",
         "technologies": ["C++", "AlphaEngine"],
         "description": "A game jam project developed under tight time constraints, showcasing rapid prototyping skills and efficient implementation of core game systems.",
         "videoUrl": "https://www.youtube.com/embed/I_cFyhu3i0E",
         "collaboration_details": {
-            "project_type": "Solo Development - Game Jam",
-            "scope": "Rapid prototyping with focus on core mechanics",
-            "time_constraint": "48 hours development window",
-            "self_managed_aspects": ["Concept design", "Implementation", "UI/UX", "Testing"]
+            "team_size": 3,
+            "my_role": "UI/UX Developer",
+            "team_roles": [
+                "UI/UX Developer (Me)",
+                "Gameplay Engineer",
+                "System Engineer",
+            ],
+            "collaboration_tools": ["Git", "Discord"],
+            "team_dynamics": "Rapid prototyping with focus on core mechanics"
         },
         "technical_challenges": [
             "Implementing complex systems under time pressure",
@@ -203,7 +215,7 @@ const projectsData = {
                 "Game Designer & Level Designer",
                 "QA Tester & Documentation Lead"
             ],
-            "collaboration_tools": ["Git", "Jira", "Slack"],
+            "collaboration_tools": ["Git", "Gdrive", "Discord"],
             "team_dynamics": "Responsible for technical architecture and engine integration while working closely with designers on gameplay mechanics."
         },
         "technical_challenges": [

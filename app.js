@@ -105,6 +105,58 @@ const projectsData = {
         },
         "downloadLink": "https://drive.google.com/file/d/1XqZQiWAvwnG1kajS_e9Vc4t5MeMhALR_/view?usp=sharing"
     },
+       "3": {
+        "title": "HistAR",
+        "subtitle": "AR travel",
+        "project_type": "halla Univ boys",
+        "is_team_project": true,
+        "team_size": 5,
+        "my_role": "Game Director & Gameplay Programmer",
+        "technologies": ["Unity","ARPortal"],
+        "description": "An AR history education game that can introduce tourist attractions to people in areas where it is difficult to travel or to those with mobility difficulties.",
+        "videoUrl": "https://www.youtube.com/embed/UdGAzBW5JTk?si=CdYeqXSnz2CV3OpB",
+        "collaboration_details": {
+            "team_size": 5,
+            "my_role": "Game Director & Gameplay Programmer",
+            "team_roles": [
+                "Game Director & Gameplay Programmer (Me)",
+                "Establishment of XR development environment",
+                "Implementation of an in-game quest system"
+            ],
+            "collaboration_tools": ["MyBox(Ndrive)", "Discord"],
+            "team_dynamics": ""
+        },
+        "technical_challenges": [
+            "Frame drops when using particles during combat phases",
+            "FPS frame due to high-quality maps and backgrounds",
+            "State synchronization in motion matching system",
+            "Performance optimization for 50-60 FPS target",
+            "Motion Capture Animation Production and 3D Modeling Synchronization"
+        ],
+        "troubleshooting": {
+            "performance_issues": {
+                "problem": "Frame drops during complex combat scenarios with multiple enemies and effects",
+                "root_cause": "Frame drops during the main phase due to excessive graphical detail on the map",
+                "solution": "Implemented event-driven combat system and object pooling for VFX",
+                "result": "Achieved 30% reduction in CPU usage and stable 50-60 FPS"
+            },
+            "memory_optimization": {
+                "problem": "Problems synchronizing combat phase time characters and boss animation",
+                "root_cause": "editing and resizing animation frames",
+                "solution": "Covering awkward parts by using animation blending and particles",
+                "result": "Completed natural action as much as possible"
+            }
+        },
+        "development_timeline": {
+            "duration": "2 months",
+            "phases": [
+                { "phase": "Pre-production", "duration": "2 weeks", "focus": "Concept design and technical planning" },
+                { "phase": "Core Development", "duration": "1 months", "focus": "Combat system and core mechanics" },
+                { "phase": "Polish & Optimization", "duration": "2 weeks", "focus": "Performance tuning and bug fixes" }
+            ]
+        },
+        "downloadLink": "https://drive.google.com/file/d/1XqZQiWAvwnG1kajS_e9Vc4t5MeMhALR_/view?usp=sharing"
+    },
 };
 
 // YouTube Player Class (1번 파일에서 가져온 기능)

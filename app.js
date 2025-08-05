@@ -40,10 +40,10 @@ const projectsData = {
                 "result": "Achieved 30% reduction in CPU usage and stable 50-60 FPS"
             },
             "memory_optimization": {
-                "problem": "Memory leaks in weapon switching system",
-                "root_cause": "Improper cleanup of weapon components and animation blueprints",
-                "solution": "Created structured weapon component lifecycle management",
-                "result": "28% reduction in memory usage using Unreal Insights profiling"
+                "problem": "Problems synchronizing combat phase time characters and boss animation",
+                "root_cause": "editing and resizing animation frames",
+                "solution": "Covering awkward parts by using animation blending and particles",
+                "result": "Completed natural action as much as possible"
             }
         },
         "development_timeline": {

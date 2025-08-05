@@ -7,7 +7,7 @@ const projectsData = {
         "subtitle": "3D Action Game",
         "project_type": "Team Stlabseal",
         "is_team_project": true,
-        "team_size": 4,
+        "team_size": 5,
         "my_role": "Game Director & Gameplay Programmer",
         "technologies": ["Unreal Engine 5.4", "Blueprint"],
         "description": "As my graduation project at Halla University, I developed a hybrid 3D action game inspired by Sekiro and Bloodborne. I served as both the director and lead developer, guiding the overall vision of the game while also handling the core aspects of development.",
@@ -17,9 +17,10 @@ const projectsData = {
             "my_role": "Game Director & Gameplay Programmer",
             "team_roles": [
                 "Game Director & Gameplay Programmer (Me)",
-                "3D Artist & Animator",
-                "UI/UX Designer",
-                "Multiplayer environment development"
+                "video director",
+                "Boss AI",
+                "Multiplayer environment development",
+                "particle design"
             ],
             "collaboration_tools": ["private drive", "Discord"],
             "team_dynamics": "Collaborated with artists and visual directors to drive technical implementation and game design decisions. Managed project schedules and feature priorities."

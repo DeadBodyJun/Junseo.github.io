@@ -56,7 +56,55 @@ const projectsData = {
         },
         "downloadLink": "https://drive.google.com/file/d/1XqZQiWAvwnG1kajS_e9Vc4t5MeMhALR_/view?usp=sharing"
     },
- 
+  "2": {
+        "title": "Play arthas",
+        "subtitle": "3D Action Game",
+        "project_type": "SGA 1604",
+        "is_team_project": true,
+        "team_size": 3,
+        "my_role": "Shop Implementation and UI/UX with C++ Vector",
+        "technologies": ["DirectX9"],
+        "description": "A game using dirextX9 that came from the idea of a team member who enjoyed wow at the time",
+        "videoUrl": "https://www.youtube.com/embed/zP5GsN6T7OY?si=tPlk5SWUX1-l2KmW",
+        "collaboration_details": {
+            "team_size": 3,
+            "my_role": "Shop Implementation and UI/UX with C++ Vector",
+            "team_roles": [
+                "Shop Implementation and UI/UX with C++ Vector (Me)",
+                "Game Director & Gameplay Programmer",
+                "Gameplay Programmer"
+            ],
+            "collaboration_tools": ["Gdrive"],
+            "team_dynamics": "The first work that made me feel the collaboration that combines how to use the Directx library and the functions that each game has created, focusing on creating a map tool"
+        },
+        "technical_challenges": [
+            "Game development that does not utilize existing unity engine",
+            "Create map tools and use the game system only with C++"
+        ],
+        "troubleshooting": {
+            "performance_issues": {
+                "problem": "Frame drops during complex combat scenarios with multiple enemies and effects",
+                "root_cause": "Frame drops during the main phase due to excessive graphical detail on the map",
+                "solution": "Implemented event-driven combat system and object pooling for VFX",
+                "result": "Achieved 30% reduction in CPU usage and stable 50-60 FPS"
+            },
+            "memory_optimization": {
+                "problem": "Problems synchronizing combat phase time characters and boss animation",
+                "root_cause": "editing and resizing animation frames",
+                "solution": "Covering awkward parts by using animation blending and particles",
+                "result": "Completed natural action as much as possible"
+            }
+        },
+        "development_timeline": {
+            "duration": "2 months",
+            "phases": [
+                { "phase": "Pre-production", "duration": "2 weeks", "focus": "Concept design and technical planning" },
+                { "phase": "Core Development", "duration": "1 months", "focus": "Combat system and core mechanics" },
+                { "phase": "Polish & Optimization", "duration": "2 weeks", "focus": "Performance tuning and bug fixes" }
+            ]
+        },
+        "downloadLink": "https://drive.google.com/file/d/1XqZQiWAvwnG1kajS_e9Vc4t5MeMhALR_/view?usp=sharing"
+    },
 };
 
 // YouTube Player Class (1번 파일에서 가져온 기능)

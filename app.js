@@ -784,7 +784,19 @@ function createProjectCard(id, project) {
     card.querySelectorAll('.project-action').forEach(el => {
         el.addEventListener('click', e => e.stopPropagation());
     });
+->
 
+    card.querySelectorAll('.project-action').forEach(el => {
+        el.addEventListener('click', e => {
+            e.stopPropagation();
+
+            // View Details 버튼인 경우 모달 열기
+            if (el.classList.contains('project-detail-btn')) {
+                e.preventDefault();
+                openProjectModal(id);
+            }
+        });
+    });
     return card;
 }
 

@@ -13,27 +13,28 @@ const projectsData = {
         "description": "As my graduation project at Halla University, I developed a hybrid 3D action game inspired by Sekiro and Bloodborne. I served as both the director and lead developer, guiding the overall vision of the game while also handling the core aspects of development.",
         "videoUrl": "https://www.youtube.com/embed/9_jF3a-hm48?si=BNEjCSe2dGjYy9YP",
         "collaboration_details": {
-            "team_size": 4,
+            "team_size": 5,
             "my_role": "Game Director & Gameplay Programmer",
             "team_roles": [
                 "Game Director & Gameplay Programmer (Me)",
                 "3D Artist & Animator",
                 "UI/UX Designer",
-                "Sound Designer & Music Composer"
+                "Multiplayer environment development"
             ],
-            "collaboration_tools": ["Git", "Github", "Gdrive", "Discord"],
-            "team_dynamics": "Led technical implementation and game design decisions while coordinating with artists and designers. Managed project timeline and feature prioritization."
+            "collaboration_tools": ["private drive", "Discord"],
+            "team_dynamics": "Collaborated with artists and visual directors to drive technical implementation and game design decisions. Managed project schedules and feature priorities."
         },
         "technical_challenges": [
-            "Frame drops during complex combat scenarios",
-            "Memory management with multiple weapon systems",
+            "Frame drops when using particles during combat phases",
+            "FPS frame due to high-quality maps and backgrounds",
             "State synchronization in motion matching system",
-            "Performance optimization for 50-60 FPS target"
+            "Performance optimization for 50-60 FPS target",
+            "Motion Capture Animation Production and 3D Modeling Synchronization"
         ],
         "troubleshooting": {
             "performance_issues": {
                 "problem": "Frame drops during complex combat scenarios with multiple enemies and effects",
-                "root_cause": "Excessive draw calls and synchronous combat calculations on main thread",
+                "root_cause": "Frame drops during the main phase due to excessive graphical detail on the map",
                 "solution": "Implemented event-driven combat system and object pooling for VFX",
                 "result": "Achieved 30% reduction in CPU usage and stable 50-60 FPS"
             },

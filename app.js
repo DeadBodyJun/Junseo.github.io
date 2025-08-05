@@ -3,15 +3,19 @@
 // Project data from JSON (1번 파일에서 가져온 내용)
 const projectsData = {
     "1": {
-        "title": "Edge Drive",
-        "subtitle": "Hybrid 3D Action Game",
-        "project_type": "team",
+        "title": "Four Divien beasts",
+        "subtitle": "3D Action Game",
+        "project_type": "Team Stlabseal",
         "is_team_project": true,
         "team_size": 4,
         "my_role": "Game Director & Gameplay Programmer",
-        "technologies": ["Unreal Engine 5.4", "C++", "Blueprint"],
-        "description": "A hybrid 3D action game inspired by Bayonetta, Dark Souls, and Paper Mario. As a DigiPen Busan Academy graduation project, this project enhanced my skills in implementing Unreal Engine 5's latest features and complex gameplay systems.",
-        "videoUrl": "https://www.youtube.com/embed/264Wfi25UOU",
+        "technologies": ["Unreal Engine 5.4", "Blueprint"],
+        "description": "As my graduation project at Halla University, I developed a hybrid 3D action game inspired by Sekiro and Bloodborne. I served as both the director and lead developer, guiding the overall vision of the game while also handling the core aspects of development.
+
+As the director, I learned how to effectively collaborate and coordinate with team members from various departments, including planning, art, and sound. This experience taught me the importance of clear communication, teamwork, and project scheduling.
+
+As a developer, I became proficient in the core functionalities of Unreal Engine 5 and applied them to implement essential gameplay systems such as combat mechanics, level design, and blueprint scripting. I focused on leveraging the latest UE5 features to create an immersive and engaging gameplay experience.",
+        "videoUrl": "https://youtu.be/9_jF3a-hm48",
         "collaboration_details": {
             "team_size": 4,
             "my_role": "Game Director & Gameplay Programmer",

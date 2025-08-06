@@ -127,7 +127,7 @@ const projectsData = {
             "team_dynamics": "dddd"
         },
         "technical_challenges": [
-            "Frame drops when using particles during combat phases",ㅅ
+            "Frame drops when using particles during combat phases",
             "FPS frame due to high-quality maps and backgrounds",
             "State synchronization in motion matching system",
             "Performance optimization for 50-60 FPS target",

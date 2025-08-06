@@ -114,7 +114,7 @@ const projectsData = {
         "my_role": "Game Director & Gameplay Programmer",
         "technologies": ["Unity","ARPortal"],
         "description": "An AR history education game that can introduce tourist attractions to people in areas where it is difficult to travel or to those with mobility difficulties.",
-        "videoUrl": "https://www.youtube.com/embed/UdGAzBW5JTk?si=CdYeqXSnz2CV3OpB",  
+        "videoUrl": "https://www.youtube.com/embed/833JLrmuZwQ?si=13O29dCbReSB7FZy",  
         "collaboration_details": {
             "team_size": 5,
             "my_role": "Game Director & Gameplay Programmer",
@@ -130,8 +130,7 @@ const projectsData = {
             "Frame drops when using particles during combat phases",
             "FPS frame due to high-quality maps and backgrounds",
             "State synchronization in motion matching system",
-            "Performance optimization for 50-60 FPS target",
-            "Motion Capture Animation Production and 3D Modeling Synchronization"
+            "Performance optimization for 50-60 FPS target"
         ],
         "troubleshooting": {
             "performance_issues": {

@@ -82,12 +82,6 @@ const projectsData = {
             "Create map tools and use the game system only with C++"
         ],
         "troubleshooting": {
-            "performance_issues": {
-                "problem": "Frame drops during complex combat scenarios with multiple enemies and effects",
-                "root_cause": "Frame drops during the main phase due to excessive graphical detail on the map",
-                "solution": "Implemented event-driven combat system and object pooling for VFX",
-                "result": "Achieved 30% reduction in CPU usage and stable 50-60 FPS"
-            },
             "memory_optimization": {
                 "problem": "Problems synchronizing combat phase time characters and boss animation",
                 "root_cause": "editing and resizing animation frames",
@@ -123,7 +117,7 @@ const projectsData = {
                 "Implementation of an in-game quest system"
             ],
             "collaboration_tools": ["MyBox(Ndrive)", "Discord"],
-            "team_dynamics": "dddd"
+            "team_dynamics": "Led a team of developers and planners as both team leader and programmer for an AR historical experience game submitted to the K-Hackathon. Collaborated with team members to implement an immersive AR portal system that allowed users to explore a virtual Gyeongbokgung Palace. Managed feature planning, task assignments, and project milestones under strict competition deadlines"
         },
         "technical_challenges": [
             "Frame drops when using particles during combat phases",
@@ -133,17 +127,12 @@ const projectsData = {
         ],
         "troubleshooting": {
             "performance_issues": {
-                "problem": "Frame drops during complex combat scenarios with multiple enemies and effects",
-                "root_cause": "Frame drops during the main phase due to excessive graphical detail on the map",
-                "solution": "Implemented event-driven combat system and object pooling for VFX",
-                "result": "Achieved 30% reduction in CPU usage and stable 50-60 FPS"
-            },
-            "memory_optimization": {
-                "problem": "Problems synchronizing combat phase time characters and boss animation",
-                "root_cause": "editing and resizing animation frames",
-                "solution": "Covering awkward parts by using animation blending and particles",
-                "result": "Completed natural action as much as possible"
+                "problem": "Frame drops when using particles during AR portal transitions",
+                "root_cause": "Heavy particle effects and lighting were triggered simultaneously when entering the AR portal, exceeding mobile device performance limits",
+                "solution": "Optimized visual effects by reducing particle count, limiting effect duration, and simplifying shaders to lower GPU load",
+                "result": "Achieved smoother portal transitions with a 20+ FPS improvement during effect-heavy scenes"
             }
+        
         },
         "development_timeline": {
             "duration": "2 months",

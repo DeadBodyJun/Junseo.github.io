@@ -47,11 +47,11 @@ const projectsData = {
             }
         },
         "development_timeline": {
-            "duration": "2 months",
+            "duration": "3 months",
             "phases": [
-                { "phase": "Pre-production", "duration": "2 weeks", "focus": "Concept design and technical planning" },
+                { "phase": "Game planning", "duration": "2 weeks", "focus": "The era and location of the game's genre and worldview" },
                 { "phase": "Core Development", "duration": "1 months", "focus": "Combat system and core mechanics" },
-                { "phase": "Polish & Optimization", "duration": "2 weeks", "focus": "Performance tuning and bug fixes" }
+                { "phase": "Polish & Optimization", "duration": "1 months", "focus": "Performance tuning and bug fixes" }
             ]
         },
         "downloadLink": "https://drive.google.com/file/d/1XqZQiWAvwnG1kajS_e9Vc4t5MeMhALR_/view?usp=sharing"
@@ -96,14 +96,13 @@ const projectsData = {
             }
         },
         "development_timeline": {
-            "duration": "2 months",
+            "duration": "1 months",
             "phases": [
-                { "phase": "Pre-production", "duration": "2 weeks", "focus": "Concept design and technical planning" },
-                { "phase": "Core Development", "duration": "1 months", "focus": "Combat system and core mechanics" },
-                { "phase": "Polish & Optimization", "duration": "2 weeks", "focus": "Performance tuning and bug fixes" }
+                { "phase": "Pre-production", "duration": "3 days", "focus": "Concept design and technical planning" },
+                { "phase": "Core Development", "duration": "2 weeks half", "focus": "Combat system and core mechanics" },
+                { "phase": "Polish & Optimization", "duration": "1 week half", "focus": "Performance tuning and bug fixes" }
             ]
         },
-        "downloadLink": "https://drive.google.com/file/d/1XqZQiWAvwnG1kajS_e9Vc4t5MeMhALR_/view?usp=sharing"
     },
        "3": {
         "title": "HistAR",

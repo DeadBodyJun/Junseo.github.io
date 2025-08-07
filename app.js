@@ -189,6 +189,52 @@ const projectsData = {
         },
         "downloadLink": ""
     },
+    "5": {
+        "title": "A refresh of Korean history",
+        "subtitle": "2D Cross-Scroll Combat Game",
+        "project_type": "10Team Sword",
+        "is_team_project": true,
+        "team_size": 5,
+        "my_role": "Game Director & Gameplay Programmer",
+        "technologies": ["Unity"],
+        "description": "Students will experience a fantasy game set in a fictional historical event. This is a game service that helps people voluntarily become interested in and intrigued by our country's history.",
+        "videoUrl": "https://www.youtube.com/embed/6F_NC-XELQo?si=U0y9yGD51WiQezPo",
+        "collaboration_details": {
+            "team_size": 5,
+            "my_role": "Game Director & Gameplay Programmer",
+            "team_roles": [
+                "Game Director & Gameplay Programmer (Me)",
+                "Map making",
+                "a combat system",
+                "Character, Animation Map UI/UX Design",
+                "a game planner"
+            ],
+            "collaboration_tools": ["GitHub"],
+            "team_dynamics": "We formed a team by creating and presenting ideas on the spot where 300 people gathered, and we managed schedule management and technical consultation in game development, and we were in charge of making the in-game Kombat system. We also collaborated with designers one-on-one, so we could communicate a lot."
+        },
+        "technical_challenges": [
+            "Complete all in-game systems in 72 hours",
+            "",
+        ],
+        "troubleshooting": {
+            "performance_issues": {
+                "problem": "3d modeling from Google Maps is too low quality",
+                "root_cause": "There was a clear limit to the quality of the 3d map brought from Google Maps",
+                "solution": "The quality of the material around the important landmark visible on the screen has been upgraded through ai",
+                "result": "As you can see in the video, you can see the material on the screen in the game without breaking it"
+            }
+
+        },
+        "development_timeline": {
+            "duration": "72 Hours",
+            "phases": [
+                { "phase": "Pre-production", "duration": "2 hours", "focus": "Concept design and technical planning" },
+                { "phase": "Core Development", "duration": "1 days", "focus": "" },
+                { "phase": "Polish & Optimization", "duration": "1 days", "focus": "" }
+            ]
+        },
+        "downloadLink": ""
+    },
 };
 
 // YouTube Player Class (1번 파일에서 가져온 기능)

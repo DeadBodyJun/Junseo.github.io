@@ -54,7 +54,7 @@ const projectsData = {
                 { "phase": "Polish & Optimization", "duration": "1 months", "focus": "Performance tuning and bug fixes" }
             ]
         },
-        "downloadLink": "https://drive.google.com/file/d/1XqZQiWAvwnG1kajS_e9Vc4t5MeMhALR_/view?usp=sharing"
+        "downloadLink": ""  // 여기가 사령수끝
     },
   "2": {
         "title": "Play arthas",
@@ -96,7 +96,7 @@ const projectsData = {
                 { "phase": "Core Development", "duration": "2 weeks half", "focus": "Combat system and core mechanics" },
                 { "phase": "Polish & Optimization", "duration": "1 week half", "focus": "Performance tuning and bug fixes" }
             ]
-        },
+        }, //여기가 아서스키우기끝
     },
        "3": {
         "title": "HistAR",
@@ -142,7 +142,8 @@ const projectsData = {
             ]
         },
         "downloadLink": ""
-    }, "4": {
+    },
+    "4": {
         "title": "HomeScape",
         "subtitle": "AR travel",
         "project_type": "halla Univ boys",
@@ -171,10 +172,10 @@ const projectsData = {
         ],
         "troubleshooting": {
             "performance_issues": {
-                "problem": "Frame drops when using particles during AR portal transitions",
-                "root_cause": "Heavy particle effects and lighting were triggered simultaneously when entering the AR portal, exceeding mobile device performance limits",
-                "solution": "Optimized visual effects by reducing particle count, limiting effect duration, and simplifying shaders to lower GPU load",
-                "result": "Achieved smoother portal transitions with a 20+ FPS improvement during effect-heavy scenes"
+                "problem": "3d modeling from Google Maps is too low quality",
+                "root_cause": "There was a clear limit to the quality of the 3d map brought from Google Maps",
+                "solution": "The quality of the material around the important landmark visible on the screen has been upgraded through ai",
+                "result": "As you can see in the video, you can see the material on the screen in the game without breaking it"
             }
 
         },

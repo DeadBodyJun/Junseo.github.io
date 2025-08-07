@@ -134,14 +134,59 @@ const projectsData = {
         
         },
         "development_timeline": {
-            "duration": "2 months",
+            "duration": "2 weeks",
             "phases": [
-                { "phase": "Pre-production", "duration": "2 weeks", "focus": "Concept design and technical planning" },
-                { "phase": "Core Development", "duration": "1 months", "focus": "Combat system and core mechanics" },
-                { "phase": "Polish & Optimization", "duration": "2 weeks", "focus": "Performance tuning and bug fixes" }
+                { "phase": "Pre-production", "duration": "3 Days", "focus": "Game content designed to fit the hackathon's purpose" },
+                { "phase": "Core Development", "duration": "1 weeks", "focus": "Utilizing XR technology in the Unity engine and developing games that fit it" },
+                { "phase": "Polish & Optimization", "duration": "4 days", "focus": "Development of prototypes for presentation and bug fixes" }
             ]
         },
-        "downloadLink": "https://drive.google.com/file/d/1XqZQiWAvwnG1kajS_e9Vc4t5MeMhALR_/view?usp=sharing"
+        "downloadLink": ""
+    }, "4": {
+        "title": "HomeScape",
+        "subtitle": "AR travel",
+        "project_type": "halla Univ boys",
+        "is_team_project": true,
+        "team_size": 5,
+        "my_role": "Game Director & Gameplay Programmer",
+        "technologies": ["Unity", "ARPortal"],
+           "description": "A travel simulation game utilizing XR technology for people with disabilities and patients with limited mobility. It brings Google Maps to 3D and has quests to explore tourist destinations around the world and find major landmarks.",
+           "videoUrl": "https://www.youtube.com/embed/6F_NC-XELQo?si=U0y9yGD51WiQezPo",
+        "collaboration_details": {
+            "team_size": 5,
+            "my_role": "Game Director & Gameplay Programmer",
+            "team_roles": [
+                "Game Director & Gameplay Programmer (Me)",
+                "Establishment of XR development environment",
+                "Implementation of an in-game quest system",
+                "3D map export using Google Maps"
+            ],
+            "collaboration_tools": ["MyBox(Ndrive)", "Discord"],
+               "team_dynamics": "During a 72-hour hackathon, I developed an XR-based travel simulation game called Homescape, which helped me understand the importance of efficient development and patient teamwork under time constraints.Through the process of overcoming user limitations with technology, I strengthened my problem- solving skills and practical mindset."
+        },
+        "technical_challenges": [
+            "When importing as a 3D map, the map quality was low, so I had to improve the quality.",
+            "Synchronization problem that requires moving the character by combining the phone's gyro sensor with XR technology",
+           
+        ],
+        "troubleshooting": {
+            "performance_issues": {
+                "problem": "Frame drops when using particles during AR portal transitions",
+                "root_cause": "Heavy particle effects and lighting were triggered simultaneously when entering the AR portal, exceeding mobile device performance limits",
+                "solution": "Optimized visual effects by reducing particle count, limiting effect duration, and simplifying shaders to lower GPU load",
+                "result": "Achieved smoother portal transitions with a 20+ FPS improvement during effect-heavy scenes"
+            }
+
+        },
+        "development_timeline": {
+            "duration": "3 days",
+            "phases": [
+                { "phase": "Pre-production", "duration": "5 hours", "focus": "Concept design and technical planning" },
+                { "phase": "Core Development", "duration": "1 days", "focus": "Game festival using XR technology and Google Maps" },
+                { "phase": "Polish & Optimization", "duration": "1 days", "focus": "High-quality map upgrade and bug fixes" }
+            ]
+        },
+        "downloadLink": ""
     },
 };
 

@@ -2,49 +2,6 @@
 
 // Project data from JSON (1번 파일에서 가져온 내용)
 const projectsData = {
-  "2": {
-        "title": "2017/Play arthas",
-        "subtitle": "3D Action Game",
-        "date": "2017-3",
-        "project_type": "SGA 1604",
-        "is_team_project": true,
-        "team_size": 3,
-        "my_role": "Shop Implementation and UI/UX with C++ Vector",
-        "technologies": ["DirectX9"],
-        "description": "A game using dirextX9 that came from the idea of a team member who enjoyed wow at the time",
-        "videoUrl": "https://www.youtube.com/embed/zP5GsN6T7OY?si=tPlk5SWUX1-l2KmW",
-        "collaboration_details": {
-            "team_size": 3,
-            "my_role": "Shop Implementation and UI/UX with C++ Vector",
-            "team_roles": [
-                "Shop Implementation and UI/UX with C++ Vector (Me)",
-                "Game Director & Gameplay Programmer",
-                "Gameplay Programmer"
-            ],
-            "collaboration_tools": ["Gdrive"],
-            "team_dynamics": "The first work that made me feel the collaboration that combines how to use the Directx library and the functions that each game has created, focusing on creating a map tool"
-        },
-        "technical_challenges": [
-            "Game development that does not utilize existing unity engine",
-            "Create map tools and use the game system only with C++"
-        ],
-        "troubleshooting": {
-            "memory_optimization": {
-                "problem": "Problems synchronizing combat phase time characters and boss animation",
-                "root_cause": "editing and resizing animation frames",
-                "solution": "Covering awkward parts by using animation blending and particles",
-                "result": "Completed natural action as much as possible"
-            }
-        },
-        "development_timeline": {
-            "duration": "1 months",
-            "phases": [
-                { "phase": "Pre-production", "duration": "3 days", "focus": "Concept design and technical planning" },
-                { "phase": "Core Development", "duration": "2 weeks half", "focus": "Combat system and core mechanics" },
-                { "phase": "Polish & Optimization", "duration": "1 week half", "focus": "Performance tuning and bug fixes" }
-            ]
-        }, //여기가 아서스키우기끝
-    },
     "1": {
         "title": "2025/Four Divien beasts",
         "subtitle": "3D Action Game",
@@ -100,7 +57,50 @@ const projectsData = {
         },
         "downloadLink": ""  // 여기가 사령수끝
     },
-       "3": {
+  "5": {
+        "title": "2017/Play arthas",
+        "subtitle": "3D Action Game",
+        "date": "2017-3",
+        "project_type": "SGA 1604",
+        "is_team_project": true,
+        "team_size": 3,
+        "my_role": "Shop Implementation and UI/UX with C++ Vector",
+        "technologies": ["DirectX9"],
+        "description": "A game using dirextX9 that came from the idea of a team member who enjoyed wow at the time",
+        "videoUrl": "https://www.youtube.com/embed/zP5GsN6T7OY?si=tPlk5SWUX1-l2KmW",
+        "collaboration_details": {
+            "team_size": 3,
+            "my_role": "Shop Implementation and UI/UX with C++ Vector",
+            "team_roles": [
+                "Shop Implementation and UI/UX with C++ Vector (Me)",
+                "Game Director & Gameplay Programmer",
+                "Gameplay Programmer"
+            ],
+            "collaboration_tools": ["Gdrive"],
+            "team_dynamics": "The first work that made me feel the collaboration that combines how to use the Directx library and the functions that each game has created, focusing on creating a map tool"
+        },
+        "technical_challenges": [
+            "Game development that does not utilize existing unity engine",
+            "Create map tools and use the game system only with C++"
+        ],
+        "troubleshooting": {
+            "memory_optimization": {
+                "problem": "Problems synchronizing combat phase time characters and boss animation",
+                "root_cause": "editing and resizing animation frames",
+                "solution": "Covering awkward parts by using animation blending and particles",
+                "result": "Completed natural action as much as possible"
+            }
+        },
+        "development_timeline": {
+            "duration": "1 months",
+            "phases": [
+                { "phase": "Pre-production", "duration": "3 days", "focus": "Concept design and technical planning" },
+                { "phase": "Core Development", "duration": "2 weeks half", "focus": "Combat system and core mechanics" },
+                { "phase": "Polish & Optimization", "duration": "1 week half", "focus": "Performance tuning and bug fixes" }
+            ]
+        }, //여기가 아서스키우기끝
+    },
+       "2": {
         "title": "2024/HistAR",
         "subtitle": "AR travel",
         "date": "2024-6",
@@ -193,7 +193,7 @@ const projectsData = {
         },
         "downloadLink": ""
     },
-    "5": {
+    "3": {
         "title": "2023/A refresh of Korean history",
         "subtitle": "2D Cross-Scroll Combat Game",
         "date": "2023-6",

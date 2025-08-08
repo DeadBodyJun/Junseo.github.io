@@ -146,7 +146,7 @@ const projectsData = {
         },
         "downloadLink": ""
     },
-    "4": {
+    "3": {
         "title": "2024/HomeScape",
         "subtitle": "AR travel",
         "date": "2024-7",
@@ -193,7 +193,7 @@ const projectsData = {
         },
         "downloadLink": ""
     },
-    "3": {
+    "4": {
         "title": "2023/A refresh of Korean history",
         "subtitle": "2D Cross-Scroll Combat Game",
         "date": "2023-6",
@@ -239,6 +239,51 @@ const projectsData = {
             ]
         },
         "downloadLink": "https://github.com/DeadBodyJun/Refresh-KoreanHistory"
+    },
+    "6": {
+        "title": "2016/The Kingdom of the Winds imitation",
+        "subtitle": "2D Tilemap RPG",
+        "date": "2016-11",
+        "project_type": "solo",
+        "is_team_project": true,
+        "team_size": 1,
+        "my_role": "Gameplay Programmer",
+        "technologies": ["WinAPI"],
+        "description": "This is a mockup of Kingdom of the Winds that I made about 6 months after learning coding. It was made only with WinAPI.",
+        "videoUrl": "https://www.youtube.com/embed/1g0vzSnDPTI?si=ynK3r3CBfFgZAZ1j",
+        "collaboration_details": {
+            "team_size": 1,
+            "my_role": "Gameplay Programmer",
+            "team_roles": [
+                "Gameplay Programmer (Me)"
+                
+            ],
+            "collaboration_tools": ["nothing"],
+            "team_dynamics": "This is the first 2D RPG I created after studying game development. I sourced resources online, modified them piece by piece in Photoshop, and created all the game's features."
+        },
+        "technical_challenges": [
+            "Combat system in a winAPI-based environment",
+            "Problems with properly animating repaired resources",
+            "camera walking"
+        ],
+        "troubleshooting": {
+            "performance_issues": {
+                "problem": "An environment where in-game resources cannot be obtained",
+                "root_cause": "The collision judgment between melee attacks and monsters is unnatural.",
+                "solution": "Move the square that acts as a collision point frame by frame to create the reach of a melee attack.",
+                "result": "The attack reach has been increased and the flow of battle has become more natural."
+            }
+
+        },
+        "development_timeline": {
+            "duration": "1 Months",
+            "phases": [
+                { "phase": "Pre-production", "duration": "2 hours", "focus": "Concept design and technical planning" },
+                { "phase": "Core Development", "duration": "2 days", "focus": "Combat system and core mechanics" },
+                { "phase": "Polish & Optimization", "duration": "10 hours", "focus": "Bug fix and Create a presentation" }
+            ]
+        },
+        "downloadLink": ""
     },
 
 };

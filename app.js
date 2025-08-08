@@ -99,7 +99,7 @@ const projectsData = {
         }, //여기가 아서스키우기끝
     },
        "3": {
-        "title": 2024/"HistAR",
+        "title": "2024/HistAR",
         "subtitle": "AR travel",
         "project_type": "halla Univ boys",
         "is_team_project": true,

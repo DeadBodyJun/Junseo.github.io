@@ -3,7 +3,7 @@
 // Project data from JSON (1번 파일에서 가져온 내용)
 const projectsData = {
     "1": {
-        "title": "Four Divien beasts",
+        "title": "2025/Four Divien beasts",
         "subtitle": "3D Action Game",
         "project_type": "Team Stlabseal",
         "is_team_project": true,
@@ -57,7 +57,7 @@ const projectsData = {
         "downloadLink": ""  // 여기가 사령수끝
     },
   "2": {
-        "title": "Play arthas",
+        "title": "2017/Play arthas",
         "subtitle": "3D Action Game",
         "project_type": "SGA 1604",
         "is_team_project": true,
@@ -99,7 +99,7 @@ const projectsData = {
         }, //여기가 아서스키우기끝
     },
        "3": {
-        "title": "HistAR",
+        "title": 2024/"HistAR",
         "subtitle": "AR travel",
         "project_type": "halla Univ boys",
         "is_team_project": true,
@@ -144,7 +144,7 @@ const projectsData = {
         "downloadLink": ""
     },
     "4": {
-        "title": "HomeScape",
+        "title": "2024/HomeScape",
         "subtitle": "AR travel",
         "project_type": "halla Univ boys",
         "is_team_project": true,
@@ -190,7 +190,7 @@ const projectsData = {
         "downloadLink": ""
     },
     "5": {
-        "title": "A refresh of Korean history",
+        "title": "2023/A refresh of Korean history",
         "subtitle": "2D Cross-Scroll Combat Game",
         "project_type": "10Team Sword",
         "is_team_project": true,

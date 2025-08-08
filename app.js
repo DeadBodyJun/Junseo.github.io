@@ -11,7 +11,7 @@ const projectsData = {
         "my_role": "Game Director & Gameplay Programmer",
         "technologies": ["Unreal Engine 5.4", "Blueprint"],
         "description": "As my graduation project at Halla University, I developed a hybrid 3D action game inspired by Sekiro and Bloodborne. I served as both the director and lead developer, guiding the overall vision of the game while also handling the core aspects of development.",
-        "videoUrl": "https://www.youtube.com/embed/UdGAzBW5JTk?si=CdYeqXSnz2CV3OpB",
+        "videoUrl": "https://drive.google.com/file/d/1llRuHy0xQjvjzFEqB4ZznF2j7diB028A/view",
         "collaboration_details": {
             "team_size": 5,
             "my_role": "Game Director & Gameplay Programmer",

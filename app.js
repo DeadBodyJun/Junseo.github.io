@@ -26,25 +26,17 @@ const projectsData = {
             "team_dynamics": "Collaborated with artists and visual directors to drive technical implementation and game design decisions. Managed project schedules and feature priorities."
         },
         "technical_challenges": [
-            "Frame drops when using particles during combat phases",
-            "FPS frame due to high-quality maps and backgrounds",
-            "State synchronization in motion matching system",
-            "Performance optimization for 50-60 FPS target",
-            "Motion Capture Animation Production and 3D Modeling Synchronization"
+            "Complete all game systems within 72 hours",
+            "Monster AI"
         ],
         "troubleshooting": {
             "performance_issues": {
-                "problem": "Frame drops during complex combat scenarios with multiple enemies and effects",
-                "root_cause": "Frame drops during the main phase due to excessive graphical detail on the map",
-                "solution": "Implemented event-driven combat system and object pooling for VFX",
-                "result": "Achieved 30% reduction in CPU usage and stable 50-60 FPS"
+                "problem": "Real-time animation and battle collision detection processing",
+                "root_cause": "The animation frames and attack judgment processing are unnatural.",
+                "solution": "Move the square that is judged by cutting it into frames and judging it",
+                "result": "The attack reach has been increased and the flow of battle has become more natural."
             },
-            "memory_optimization": {
-                "problem": "Problems synchronizing combat phase time characters and boss animation",
-                "root_cause": "editing and resizing animation frames",
-                "solution": "Covering awkward parts by using animation blending and particles",
-                "result": "Completed natural action as much as possible"
-            }
+           
         },
         "development_timeline": {
             "duration": "3 months",

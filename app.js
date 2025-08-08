@@ -11,7 +11,7 @@ const projectsData = {
         "my_role": "Game Director & Gameplay Programmer",
         "technologies": ["Unreal Engine 5.4", "Blueprint"],
         "description": "As my graduation project at Halla University, I developed a hybrid 3D action game inspired by Sekiro and Bloodborne. I served as both the director and lead developer, guiding the overall vision of the game while also handling the core aspects of development.",
-        "videoUrl": "https://drive.google.com/file/d/1llRuHy0xQjvjzFEqB4ZznF2j7diB028A/view",
+        "videoUrl": "https://www.youtube.com/embed/UdGAzBW5JTk?si=b89qJv8HKoImhoAZ",
         "collaboration_details": {
             "team_size": 5,
             "my_role": "Game Director & Gameplay Programmer",
@@ -214,14 +214,14 @@ const projectsData = {
         },
         "technical_challenges": [
             "Complete all in-game systems in 72 hours",
-            "",
+            "Monster AI",
         ],
         "troubleshooting": {
             "performance_issues": {
                 "problem": "3d modeling from Google Maps is too low quality",
                 "root_cause": "There was a clear limit to the quality of the 3d map brought from Google Maps",
                 "solution": "The quality of the material around the important landmark visible on the screen has been upgraded through ai",
-                "result": "As you can see in the video, you can see the material on the screen in the game without breaking it"
+                "result": "The attack reach has been increased and the flow of battle has become more natural."
             }
 
         },

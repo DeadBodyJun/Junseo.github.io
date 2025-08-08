@@ -5,6 +5,7 @@ const projectsData = {
     "1": {
         "title": "2025/Four Divien beasts",
         "subtitle": "3D Action Game",
+        "date": "2025-05",
         "project_type": "Team Stlabseal",
         "is_team_project": true,
         "team_size": 5,
@@ -56,9 +57,10 @@ const projectsData = {
         },
         "downloadLink": ""  // 여기가 사령수끝
     },
-  "5": {
+  "2": {
         "title": "2017/Play arthas",
         "subtitle": "3D Action Game",
+        "date": "2017-3",
         "project_type": "SGA 1604",
         "is_team_project": true,
         "team_size": 3,
@@ -101,6 +103,7 @@ const projectsData = {
        "3": {
         "title": "2024/HistAR",
         "subtitle": "AR travel",
+        "date": "2024-6",
         "project_type": "halla Univ boys",
         "is_team_project": true,
         "team_size": 5,
@@ -146,6 +149,7 @@ const projectsData = {
     "4": {
         "title": "2024/HomeScape",
         "subtitle": "AR travel",
+        "date": "2024-7",
         "project_type": "halla Univ boys",
         "is_team_project": true,
         "team_size": 5,
@@ -189,9 +193,10 @@ const projectsData = {
         },
         "downloadLink": ""
     },
-    "2": {
+    "5": {
         "title": "2023/A refresh of Korean history",
         "subtitle": "2D Cross-Scroll Combat Game",
+        "date": "2023-6",
         "project_type": "10Team Sword",
         "is_team_project": true,
         "team_size": 5,
@@ -1187,3 +1192,24 @@ const debouncedScrollHandler = debounce(() => {
 }, 100);
 
 window.addEventListener('scroll', debouncedScrollHandler);
+// Now render the projects in descending order by year
+const sortedProjects = Object.values(projectsData).sort((a, b) => b.year - a.year);
+
+const projectList = document.getElementById("project-list");
+
+sortedProjects.forEach((project) => {
+    const projectItem = document.createElement("div");
+    projectItem.classList.add("project-item");
+
+    projectItem.innerHTML = `
+        <img src="${project.thumbnail}" alt="${project.title}" class="thumbnail">
+        <h3>${project.title}</h3>
+        <p><strong>${project.subtitle}</strong> (${project.year})</p>
+        <p>${project.description}</p>
+        <ul>
+            ${project.features.map((f) => `<li>${f}</li>`).join("")}
+        </ul>
+    `;
+
+    projectList.appendChild(projectItem);
+});

@@ -56,7 +56,7 @@ const projectsData = {
         },
         "downloadLink": ""  // 여기가 사령수끝
     },
-  "2": {
+  "5": {
         "title": "2017/Play arthas",
         "subtitle": "3D Action Game",
         "project_type": "SGA 1604",
@@ -189,7 +189,7 @@ const projectsData = {
         },
         "downloadLink": ""
     },
-    "5": {
+    "2": {
         "title": "2023/A refresh of Korean history",
         "subtitle": "2D Cross-Scroll Combat Game",
         "project_type": "10Team Sword",
@@ -235,6 +235,7 @@ const projectsData = {
         },
         "downloadLink": "https://github.com/DeadBodyJun/Refresh-KoreanHistory"
     },
+
 };
 
 // YouTube Player Class (1번 파일에서 가져온 기능)

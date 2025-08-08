@@ -198,7 +198,7 @@ const projectsData = {
         "my_role": "Game Director & Gameplay Programmer",
         "technologies": ["Unity"],
         "description": "Students will experience a fantasy game set in a fictional historical event. This is a game service that helps people voluntarily become interested in and intrigued by our country's history.",
-        "videoUrl": "https://drive.google.com/file/d/1llRuHy0xQjvjzFEqB4ZznF2j7diB028A/view",
+        "videoUrl": "https://www.youtube.com/embed/iDWCO3naHQw?si=V2AsnCzoCuQKNVsf",
         "collaboration_details": {
             "team_size": 5,
             "my_role": "Game Director & Gameplay Programmer",

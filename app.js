@@ -278,9 +278,9 @@ const projectsData = {
         "development_timeline": {
             "duration": "1 Months",
             "phases": [
-                { "phase": "Pre-production", "duration": "2 hours", "focus": "Concept design and technical planning" },
-                { "phase": "Core Development", "duration": "2 days", "focus": "Combat system and core mechanics" },
-                { "phase": "Polish & Optimization", "duration": "10 hours", "focus": "Bug fix and Create a presentation" }
+                { "phase": "Pre-production", "duration": "1 Week", "focus": "Concept design and technical planning" },
+                { "phase": "Core Development", "duration": "2 Week", "focus": "Combat system and core mechanics" },
+                { "phase": "Polish & Optimization", "duration": "1 Week", "focus": "Bug fix and Create a presentation" }
             ]
         },
         "downloadLink": ""

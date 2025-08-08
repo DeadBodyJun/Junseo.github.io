@@ -198,7 +198,7 @@ const projectsData = {
         "my_role": "Game Director & Gameplay Programmer",
         "technologies": ["Unity"],
         "description": "Students will experience a fantasy game set in a fictional historical event. This is a game service that helps people voluntarily become interested in and intrigued by our country's history.",
-        "videoUrl": "https://www.youtube.com/embed/6F_NC-XELQo?si=U0y9yGD51WiQezPo",
+        "videoUrl": "https://drive.google.com/file/d/1llRuHy0xQjvjzFEqB4ZznF2j7diB028A/view",
         "collaboration_details": {
             "team_size": 5,
             "my_role": "Game Director & Gameplay Programmer",
@@ -218,9 +218,9 @@ const projectsData = {
         ],
         "troubleshooting": {
             "performance_issues": {
-                "problem": "3d modeling from Google Maps is too low quality",
-                "root_cause": "There was a clear limit to the quality of the 3d map brought from Google Maps",
-                "solution": "The quality of the material around the important landmark visible on the screen has been upgraded through ai",
+                "problem": "Attack judgment and animation do not match",
+                "root_cause": "The collision judgment between melee attacks and monsters is unnatural.",
+                "solution": "Move the square that acts as a collision point frame by frame to create the reach of a melee attack.",
                 "result": "The attack reach has been increased and the flow of battle has become more natural."
             }
 
@@ -229,11 +229,11 @@ const projectsData = {
             "duration": "72 Hours",
             "phases": [
                 { "phase": "Pre-production", "duration": "2 hours", "focus": "Concept design and technical planning" },
-                { "phase": "Core Development", "duration": "1 days", "focus": "" },
-                { "phase": "Polish & Optimization", "duration": "1 days", "focus": "" }
+                { "phase": "Core Development", "duration": "2 days", "focus": "Combat system and core mechanics" },
+                { "phase": "Polish & Optimization", "duration": "10 hours", "focus": "Bug fix and Create a presentation" }
             ]
         },
-        "downloadLink": ""
+        "downloadLink": "https://github.com/DeadBodyJun/Refresh-KoreanHistory"
     },
 };
 
